@@ -1,0 +1,59 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --colorPrimary: #004357;
+    --pinkLight: rgba(234, 49, 159, 0.57);
+    --pinkDark: rgba(236, 0, 140, 0.57);
+    --blueSecondary: #3BC7F4;
+    --backgroundLight: #f4f4f4;
+    --feedbackError: rgba(219, 69, 69, 0.9);
+    --errorDark: #B63939;
+    --grayFeedback: #808080;
+    --grayDefault: #4E4E4E;
+    --green: #A4CE46;
+    --warning: #E5A801;
+    --white: #ffff;
+}
+
+p {
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Poppins';
+}
+
+.btn-primary {
+    background-color: var(--colorPrimary) !important; 
+    border: none;
+    font-family: 'Poppins';
+    font-weight: 300;
+    border-radius: 8px;
+}
+
+.btn-secondary {
+    background-color: var(--pinkDark) !important; 
+    border: none;
+    font-family: 'Poppins';
+    font-weight: 300;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.container {
+    margin-top: 42px;
+    min-height: 90vh;
+}
+
+div.walppaper {
+    img {
+        width: 100%;
+        height: 90vh;
+        object-fit: contain;
+    }
+}
