@@ -1,5 +1,0 @@
-1) Adicionar o ojdbc no projeto. Eu usei o 8.
-2) Criar os pacotes para entities, connection, dao, enums e etc.
-3) Criar uma entidade com construtor, get e set 
-4) Criar seu DAO (o DAO deve ser uma interface que contenha os métodos da entidade)
-5) Crie o DAOImpl de cada um dos DAO's (os impl sao responsaveis por armazenar a lógica dos métodos de cada DAO implementando a interface)
