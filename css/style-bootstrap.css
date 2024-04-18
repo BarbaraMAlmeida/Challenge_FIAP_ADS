@@ -1,0 +1,96 @@
+/* Todos os componentes bootstrap modificados em quesito estilo devem ser adicionados aqui */
+
+
+/* Botões  */
+
+.btn-primary {
+    background-color: var(--colorPrimary) !important; 
+    border: none;
+    font-family: 'Poppins';
+    font-weight: 300;
+    border-radius: 8px;
+}
+
+
+.btn-secondary {
+    background-color: var(--pinkDark) !important; 
+    border: none;
+    font-family: 'Poppins';
+    font-weight: 300;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+
+.btn-danger {
+    background-color: var(--feedbackError) !important; 
+    border: none;
+    font-family: "Montserrat";
+    font-size: 16px;
+    width: 100%;
+    font-weight: 300;
+    border-radius: 8px;
+}
+
+
+/* Container */
+
+.container {
+    margin-top: 42px;
+    min-height: 90vh;
+}
+
+.container-fluid {
+    padding: 24px;
+}
+
+
+/* Card */
+
+.card {
+    border: none;
+    background: var(--white);
+    font-weight: 500;
+}
+
+.card-header {
+    background: var(--white);
+    font-family: 'Montserrat';
+    color: var(--grayDefault);
+}
+
+
+
+/* Select e Formulario */
+
+.form-select {
+   border: 1px solid var(--bordergray); 
+   border-radius: 8px;
+}
+
+.form-select:active {
+    border: 2px solid var(--bordergray); 
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+.form-select:hover {
+    border: 2px solid var(--bordergray); 
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+
+/* Nav e Tabs */
+
+.nav-link {
+    display: block;
+    padding: 16px 16px 16px 0px;
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: var(--bs-nav-link-color);
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}

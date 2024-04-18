@@ -18,9 +18,6 @@
     --warning: #E5A801;
     --white: #ffff;
     --bordergray: #CDCDCF;
-    --bs-nav-link-color: #004357 !important;
-    --bs-nav-link-hover-color: #004357 !important;
-    --bs-nav-link-disabled-color: grayFeedback !important;
 }
 
 body {
@@ -119,6 +116,13 @@ span {
 
 
 /* GRID */
+
+
+@media (min-width: 1000px) {
+    .col-span-12-md {
+        grid-column: span 12 / span 12; 
+    }
+}
 
 .grid {
     display: grid;
@@ -522,25 +526,6 @@ span {
 
 .row-end-auto {
     grid-row-end: auto;
-}
-
-
-@media (max-width: 1100.98px) {
-    .col-span-6 {
-        grid-column: span 12 / span 12;
-    }
-}
-
-@media (max-width: 1100.98px) {
-    .col-span-3 {
-        grid-column: span 6 / span 6;
-    }
-}
-
-@media (max-width: 657.98px) {
-    .col-span-3 {
-        grid-column: span 12 / span 12;
-    }
 }
 
 
