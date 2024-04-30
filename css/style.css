@@ -41,6 +41,26 @@ h1,h2,h3,h4,h5,h6 {
     height: 40px;
 }
 
+.locale {
+    color: var(--errorWarning);
+}
+
+.title-modal {
+    font-weight: 400;
+    color: var(--grayDefault);
+
+    h6 {
+        font-size: 16px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    span {
+        font-weight: 500;
+        font-size: 12px
+    }
+}
+
 select {
     height: 40px;
 }
