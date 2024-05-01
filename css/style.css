@@ -178,6 +178,36 @@ span {
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 16px;
+    margin-top: 4px;
+}
+
+.title-card-payments {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 4px;
+    color: var(--grayDefault);
+    
+    span {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    i {
+        font-size: 16px;
+    }
+}
+
+.information {
+    color: var(--colorPrimary);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.value {
+    color: var(--grayDefault);
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .card-dashboard-item {
@@ -185,6 +215,11 @@ span {
     padding: 8px 16px;
     border-radius: 8px;
     box-shadow: 4px 4px 10 rgba(0, 0, 0, 0.1);
+}
+
+button a {
+    color: var(--white);
+    text-decoration: none;
 }
 
 
