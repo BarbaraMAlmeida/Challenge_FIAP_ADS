@@ -53,6 +53,28 @@
     border-radius: 8px;
 }
 
+.btn-info {
+    background-color: var(--pinkDark) !important; 
+    border:none;
+    color: var(--white);
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    width: 120px;
+}
+
+.btn-info:hover {
+    background-color: var(--pinkLight) !important; 
+    border: none;
+    color: var(--white);
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    width: 120px;
+}
+
 
 /* Container */
 
