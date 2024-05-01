@@ -74,13 +74,13 @@
                                          <div>
                                           <span>Taxa de leitura</span>
                                           <div class="progress">
-                                              <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                              <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                          </div> 
                                          <div>
                                           <span>Tags Identificadas</span>
                                           <div class="progress">
-                                              <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                              <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                          </div> 
                                       </div>
@@ -90,13 +90,13 @@
                                          <div>
                                           <span>Taxa de leitura</span>
                                           <div class="progress">
-                                              <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                              <div class="progress-bar bg-warning" role="progressbar" style="width: 5%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                          </div> 
                                          <div>
                                           <span>Tags Identificadas</span>
                                           <div class="progress">
-                                              <div class="progress-bar" role="progressbar" style="width: 2%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                              <div class="progress-bar bg-warning" role="progressbar" style="width: 2%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                          </div> 
                                       </div>
@@ -504,7 +504,12 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <img class="rounded" src="./assets/pedagio.svg" alt="" width="100%">
+                  <!-- <img class="rounded" src="./assets/pedagio.svg" alt="" width="100%"> -->
+                  <video autoplay loop muted style="width: 100%;">
+                    <source src="./assets/camera_principal.mp4" type="video/mp4">
+                    <!-- Mensagem para navegadores que não suportam a tag <video> -->
+                    Seu navegador não suporta vídeos incorporados.
+                </video>
                 </div>
             </div>
         </section>
@@ -537,46 +542,69 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Abrir chamado</h1>
+              <div class="title-modal">
+                <h6>Abrir chamado</h6>
+              </div>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <div class="row">
                 <div class="col-md-6 mt-3">
                     <label for="exampleFormControlInput1" class="form-label">Nome do chamado</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Informe seu nome aqui">
                 </div>
                 <div class="col-md-6 mt-3">
                     <label for="exampleFormControlInput1" class="form-label">Tipo de equipamento</label>
                     <select class="form-select" aria-label="Default select example">
                         <option selected></option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                        <option value="1">Sensor RFID</option>
+                        <option value="2">Câmeras ANPR</option>
+                        <option value="3">Iluminação Infravermelha</option>
+                        <option value="4">Câmeras Estereoscópicas</option>
+                        <option value="4">Câmeras Auxiliares</option>
                     </select>
                 </div>
                 <div class="col-md-6 mt-3">
-                    <label for="exampleFormControlInput1" class="form-label">Pórtico</label>
+                    <label for="exampleFormControlInput1" class="form-label">N° do equipamento</label>
                     <select class="form-select" aria-label="Default select example">
                         <option selected></option>
-                        <option value="1">Pago</option>
-                        <option value="2">Negado</option>
-                        <option value="3">Vencido</option>
-                        <option value="3">Em processamento</option>
-                        <option value="3">Boleto pendente</option>
+                        <option value="1">CDF22</option>
+                        <option value="2">CDF27</option>
+                        <option value="3">CDF21</option>
+                        <option value="3">CDF46</option>
                     </select>
                 </div>
 
                 <div class="col-md-6 mt-3">
-                  <label for="exampleFormControlInput1" class="form-label">Status do equipamento</label>
+                  <label for="exampleFormControlInput1" class="form-label">Pórtico</label>
                   <select class="form-select" aria-label="Default select example">
                       <option selected></option>
-                      <option value="1">Pago</option>
-                      <option value="2">Negado</option>
-                      <option value="3">Vencido</option>
-                      <option value="3">Em processamento</option>
-                      <option value="3">Boleto pendente</option>
+                      <option value="1">PORTICO 01</option>
+                      <option value="2">PORTICO 02</option>
+                      <option value="3">PORTICO 03</option>
+                      <option value="3">PORTICO 04</option>
                   </select>
+              </div>
+
+              <div class="col-md-6 mt-3">
+                <label for="exampleFormControlInput1" class="form-label">Status do equipamento</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected></option>
+                    <option value="1">Em manutenção</option>
+                    <option value="2">Desligado</option>
+                    <option value="3">Com falha</option>
+                    <option value="3">Quebrado</option>
+                </select>
+              </div>
+
+              <div class="col-md-6 mt-3">
+                <label for="exampleFormControlInput1" class="form-label">Prioridade</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected></option>
+                    <option value="1">Urgente</option>
+                    <option value="2">Moderado</option>
+                    <option value="3">Baixa</option>
+                </select>
               </div>
 
               <div class="col-md-12 mt-3">
@@ -587,10 +615,16 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-bs-dismiss="modal">Cancelar</button>
-              <button type="button" class="btn btn-primary">Abrir chamado</button>
+              <button type="button" class="btn btn-primary">
+                <div class="spinner-border spinner-border-sm" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                Abrir chamado</button>
             </div>
           </div>
         </div>
       </div>
+
+      <script src="./scripts/cards_controle_cameras.js"></script>
 </body>
 </html>

@@ -1,3 +1,5 @@
+@import url('../css/style.css');
+
 /* Todos os componentes bootstrap modificados em quesito estilo devem ser adicionados aqui */
 
 
@@ -134,4 +136,26 @@ textarea.form-control {
     background: 0 0;
     border: 0;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+
+/* BACKGROUND AND PROGRESS */
+.bg-success {
+    --bs-bg-opacity: 1;
+    background-color: var(--green) !important;
+}
+
+.bg-warning {
+    --bs-bg-opacity: 1;
+    background-color: var(--warning) !important;
+}
+
+.bg-info {
+    --bs-bg-opacity: 1;
+    background-color: var(--pinkDark) !important;
+}
+
+.bg-danger {
+    --bs-bg-opacity: 1;
+    background-color: var(--feedbackError) !important;
 }
