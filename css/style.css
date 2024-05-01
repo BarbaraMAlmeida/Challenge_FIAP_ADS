@@ -118,9 +118,15 @@ div.status-temperatura span {
     font-weight: 700;
 }
 
-.dropdown a {
+.card-header a {
+    font-size: 14px;
     text-decoration: none;
-    color: var(--grayDefault);
+    color: var(--colorPrimary);
+}
+
+.card-header a:hover {
+    text-decoration: underline;
+    color: var(--colorPrimary);
 }
 
 header {
