@@ -49,7 +49,7 @@
         <section class="header-page d-flex justify-content-between flex-wrap">
             <div>
                 <h6>Cadastro de usuários</h6>
-                <p>Aqui você pode criar novas contas para seus colaboradores do suporte e da central.</p>
+                <p>Aqui você pode criar novas contas para seus colaboradores navegarem pelo sistema.</p>
             </div>
             <div class="d-flex flex-wrap">
                 <button type="button" class="btn btn-info me-3" type="button" data-bs-toggle="modal" data-bs-target="#modalChamado"><a href="./central.html">Voltar</a></button>
@@ -102,18 +102,34 @@
                 <button class="btn btn-default mt-2">
                     Cancelar
                 </button>
-                <button class="btn btn-primary ms-3 mt-2">
+                <button class="btn btn-primary ms-3 mt-2" id="liveToastBtn">
                     Salvar usuário
                 </button>
             </div>
         </div>
     </section>
 
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header sucess-toast">
+        <i class="fa-solid fa-circle-check me-2"></i>
+        <strong class="me-auto">Cadastro realizado</strong>
+        <small>1 segundo atrás</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close">
+
+        </button>
+        </div>
+        <div class="toast-body">
+        O usuário foi cadastrado com sucesso!
+        </div>
+    </div>
+    </div>
 
 
-    <script src="./scripts/cards_controle_cameras.js"></script>
+
     <script src="./scripts/permission.js"></script>
     <script src="./scripts/cookie.js"></script>
     <script src="./scripts/permission.js"></script>
+    <script src="./scripts/cards_controle_cameras.js"></script>
 </body>
 </html>

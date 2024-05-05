@@ -199,6 +199,11 @@ textarea.form-control {
     background-color: var(--green) !important;
 }
 
+.bg-god {
+    --bs-bg-opacity: 1;
+    background-color: var(--colorPrimary) !important;
+}
+
 .bg-warning {
     --bs-bg-opacity: 1;
     background-color: var(--warning) !important;
@@ -277,4 +282,10 @@ textarea.form-control {
 
 .dropdown-item:active {
     color: var(--black);
+}
+
+.toast-body {
+    padding: var(--bs-toast-padding-x);
+    word-wrap: break-word;
+    background: white;
 }

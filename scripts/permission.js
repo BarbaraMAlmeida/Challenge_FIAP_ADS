@@ -8,10 +8,12 @@ function getPermissionProfile() {
 }
 
 function controlPermission() {
-    var selectAdmin = document.getElementById('admin_selection');
-    var dashboardAdminAndCentral = document.getElementsByClassName('dashboard');
+    let selectAdmin = document.getElementById('admin_selection');
+    let dashboardAdminAndCentral = document.getElementsByClassName('dashboard');
+    let registerUserAdmin = document.getElementById('registerUserAdmin');
 
     if(getPermissionProfile() === 'SUPORTE') {
+        registerUserAdmin.style.display = 'none';
         selectAdmin.style.display = 'none';
         for (var i = 0; i < dashboardAdminAndCentral.length; i++) {
             dashboardAdminAndCentral[i].style.display = 'none';
@@ -19,6 +21,7 @@ function controlPermission() {
     }
     else if(getPermissionProfile() === 'CENTRAL') {
         selectAdmin.style.display = 'none';
+        registerUserAdmin.style.display = 'none';
     }
 }
 

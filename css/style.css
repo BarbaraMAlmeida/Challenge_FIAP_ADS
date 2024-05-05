@@ -16,6 +16,7 @@
     --grayFeedback: #808080;
     --grayDefault: #4E4E4E;
     --green: #A4CE46;
+    --greenDark: #597f07;
     --warning: #E5A801;
     --white: #ffff;
     --black: #00000;
@@ -181,6 +182,12 @@ header {
         color: var(--colorPrimary);
         font-weight: 600;
     }
+}
+
+.sucess-toast {
+    background-color: var(--greenDark);
+    color: var(--white);
+    font-weight: 500;
 }
 
 
