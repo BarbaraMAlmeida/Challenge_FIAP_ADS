@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/EducaFin.png" type="image/x-icon">
+    <title>Tecsidel - Monitoramento Free Flow</title>
+
+    <!-- Boostrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!--Font Awesome -->
+    <script src="https://kit.fontawesome.com/76ae1fe739.js" crossorigin="anonymous"></script>
+
+    <!--Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--Estilo CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css"> 
+    <link rel="stylesheet" href="./css/style-bootstrap.css">
+</head>
+<body>
+    <header class="d-flex justify-content-between align-items-center flex-wrap">
+        <div>
+            <h5>20:22</h5>
+            <h6>Sexta-feira | 22 de março, 2024</h6>
+        </div>
+        <div class="dropdown">
+            <span class="dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="me-3" src="./assets/profile3.jpg" alt="">
+              <p class="me-3">Fernando Nascimento</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </span>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="cadastro-usuario.html">Cadastrar usuários</a></li>
+              <li><a class="dropdown-item" href="index.html">Logout</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+
+
+    <section class="container-fluid">
+        <section class="header-page d-flex justify-content-between flex-wrap">
+            <div>
+                <h6>Cadastro de usuários</h6>
+                <p>Aqui você pode criar novas contas para seus colaboradores do suporte e da central.</p>
+            </div>
+            <div class="d-flex flex-wrap">
+                <button type="button" class="btn btn-info me-3" type="button" data-bs-toggle="modal" data-bs-target="#modalChamado"><a href="./central.html">Voltar</a></button>
+            </div>
+    </section>
+
+    <section class="form-user">
+        <div class="card ">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6 mt-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nome do usuário</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Informe seu nome aqui">
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <label for="exampleFormControlInput1" class="form-label">Setor de atuação</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Selecione o setor de atuação</option>
+                            <option value="1">Financeiro</option>
+                            <option value="2">Tecnologia</option>
+                            <option value="3">Suporte</option>
+                            <option value="4">Funcionário da central</option>
+                            <option value="4">Outros</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6 mt-3">
+                        <label for="exampleFormControlInput1" class="form-label">Permissão da conta</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Selecione o tipo de permissão</option>
+                            <option value="1">Administrador</option>
+                            <option value="2">Central de controle</option>
+                            <option value="3">Suporte técnico</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6 mt-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Informe o email">
+                    </div>                
+        
+                  <div class="col-md-6 mt-3">
+                    <label for="exampleFormControlInput1" class="form-label">Senha</label>
+                    <input type="passoword" class="form-control" id="exampleFormControlInput1" placeholder="Informe a senha inicial">
+                  </div>
+        
+                </div>        
+            </div>
+            <div class="card-footer d-flex justify-content-end align-items-center flex-wrap">
+                <button class="btn btn-default mt-2">
+                    Cancelar
+                </button>
+                <button class="btn btn-primary ms-3 mt-2">
+                    Salvar usuário
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="./scripts/cards_controle_cameras.js"></script>
+    <script src="./scripts/permission.js"></script>
+    <script src="./scripts/cookie.js"></script>
+    <script src="./scripts/permission.js"></script>
+</body>
+</html>

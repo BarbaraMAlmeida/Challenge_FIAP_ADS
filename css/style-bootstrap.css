@@ -119,11 +119,23 @@
 .form-select {
    border: 1px solid var(--bordergray); 
    border-radius: 8px;
+   color: var(--grayDefault);
 }
+
 
 .form-select:active {
     border: 2px solid var(--bordergray); 
     border-radius: 8px;
+    box-shadow: none;
+}
+
+.form-select:focus {
+    border: 2px solid var(--bordergray); 
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+select:active {
     box-shadow: none;
 }
 
@@ -136,6 +148,7 @@
 .form-control {
    border: 1px solid var(--bordergray); 
    border-radius: 8px;
+   color: var(--grayDefault);
 }
 
 .form-control:active {
@@ -150,10 +163,19 @@
     box-shadow: none;
 }
 
+.form-control:focus {
+    border: 2px solid var(--bordergray); 
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+
 textarea.form-control {
     min-height: 100px;
     resize: none;
 }
+
+
 
 
 /* Nav e Tabs */
@@ -241,4 +263,18 @@ textarea.form-control {
     font-size: 14px;
     font-weight: 600;
     border-radius: 8px;
+}
+
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+
+.dropdown-item:hover {
+    background-color: var(--bordergray);
+}
+
+.dropdown-item:active {
+    color: var(--black);
 }
