@@ -22,6 +22,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css"> 
     <link rel="stylesheet" href="./css/style-bootstrap.css">
+    <link rel="icon" href="https://www.tecsidel.com/wp-content/uploads/2022/12/cropped-isologo-32x32.png" sizes="32x32">
 </head>
 <body>
     <header class="d-flex justify-content-between align-items-center flex-wrap">
@@ -42,9 +43,6 @@
         </div>
     </header>
 
-
-
-
     <section class="container-fluid">
         <section class="header-page d-flex justify-content-between flex-wrap">
             <div>
@@ -52,63 +50,63 @@
                 <p>Aqui você pode criar novas contas para seus colaboradores navegarem pelo sistema.</p>
             </div>
             <div class="d-flex flex-wrap">
-                <button type="button" class="btn btn-info me-3" type="button" data-bs-toggle="modal" data-bs-target="#modalChamado"><a href="./central.html">Voltar</a></button>
+                <a href="./central.html"> <button type="button" class="btn btn-info me-3" type="button">Voltar</button></a>
             </div>
     </section>
 
-    <section class="form-user">
-        <div class="card ">
+    <section class="form-user mt-3">
+        <div class="card">
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-6 mt-3">
-                        <label for="exampleFormControlInput1" class="form-label">Nome do usuário</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Informe seu nome aqui">
+                        <label for="userName" class="form-label">Nome do usuário</label>
+                        <input type="text" class="form-control" id="userName" placeholder="Informe seu nome aqui">
                     </div>
                     <div class="col-md-6 mt-3">
-                        <label for="exampleFormControlInput1" class="form-label">Setor de atuação</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Selecione o setor de atuação</option>
+                        <label for="sector" class="form-label">Setor de atuação</label>
+                        <select class="form-select" id="sector" aria-label="Default select example">
+                            <option selected value="">Selecione o setor de atuação</option>
                             <option value="1">Financeiro</option>
                             <option value="2">Tecnologia</option>
                             <option value="3">Suporte</option>
                             <option value="4">Funcionário da central</option>
-                            <option value="4">Outros</option>
+                            <option value="5">Outros</option>
                         </select>
                     </div>
-
+    
                     <div class="col-md-6 mt-3">
-                        <label for="exampleFormControlInput1" class="form-label">Permissão da conta</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Selecione o tipo de permissão</option>
+                        <label for="permission" class="form-label">Permissão da conta</label>
+                        <select class="form-select" id="permission" aria-label="Default select example">
+                            <option selected value="">Selecione o tipo de permissão</option>
                             <option value="1">Administrador</option>
                             <option value="2">Central de controle</option>
                             <option value="3">Suporte técnico</option>
                         </select>
                     </div>
-
+    
                     <div class="col-md-6 mt-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Informe o email">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Informe o email">
                     </div>                
-        
-                  <div class="col-md-6 mt-3">
-                    <label for="exampleFormControlInput1" class="form-label">Senha</label>
-                    <input type="passoword" class="form-control" id="exampleFormControlInput1" placeholder="Informe a senha inicial">
-                  </div>
-        
+    
+                    <div class="col-md-6 mt-3">
+                        <label for="password" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="password" placeholder="Informe a senha inicial">
+                    </div>
+    
                 </div>        
             </div>
             <div class="card-footer d-flex justify-content-end align-items-center flex-wrap">
-                <button class="btn btn-default mt-2">
+                <button class="btn btn-default mt-2" type="button" id="cancel">
                     Cancelar
                 </button>
-                <button class="btn btn-primary ms-3 mt-2" id="liveToastBtn">
+                <button class="btn btn-primary ms-3 mt-2" id="save">
                     Salvar usuário
                 </button>
             </div>
         </div>
     </section>
-
+    
     <div class="toast-container position-fixed top-0 end-0 p-3">
     <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-header sucess-toast">
