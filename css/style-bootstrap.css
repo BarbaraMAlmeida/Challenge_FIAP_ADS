@@ -342,3 +342,15 @@ textarea.form-control {
     background: linear-gradient(to bottom right, rgba(247, 135, 135, 0.2), rgba(255, 198, 198, 0.6));
     animation: pulseShadow 2s infinite ease-in-out;
   }
+
+  .progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: transparent;
+    text-align: center;
+    white-space: nowrap;
+    background-color: transparent;
+    transition: none;
+}

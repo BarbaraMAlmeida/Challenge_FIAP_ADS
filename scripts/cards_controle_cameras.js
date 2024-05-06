@@ -1,28 +1,35 @@
 window.onload = () => {
-    setInterval(getHourCurrent, 1000);
-    getDateCurrent();
-    getValueCards();
-    localePortico();
-    AddGradientCardFailed();
+    let spinnerDashboard = document.getElementById('spinner-dashboard');
+    let dashboard = document.getElementById('dashboard');
 
+    setTimeout(() => {
+        spinnerDashboard.classList.add('visually-hidden');
+        dashboard.classList.remove('visually-hidden');
+        setInterval(getHourCurrent, 1000);
+        getDateCurrent();
+        getValueCards();
+        localePortico();
+        AddGradientCardFailed();
 
-    ///isso é da tela de cadastro de usuario, levar para lá
-    // document.getElementById('save').addEventListener('click', () => {
-    //     console.log("click")
-    //     formControlRegisterUser();
-    // });
+        ///isso é da tela de cadastro de usuario, levar para lá
+        // document.getElementById('save').addEventListener('click', () => {
+        //     console.log("click")
+        //     formControlRegisterUser();
+        // });
 
-    // document.getElementById('cancel').addEventListener('click', () => {
-    //     clearFormValues();
-    // });
+        // document.getElementById('cancel').addEventListener('click', () => {
+        //     clearFormValues();
+        // });
 
-    document.getElementById('saveCall').addEventListener('click', () => {
-        formControlRegisterCall();
-    });
+        document.getElementById('saveCall').addEventListener('click', () => {
+            formControlRegisterCall();
+        });
 
-    document.getElementById('cancelCall').addEventListener('click', () => {
-        clearCallFormValues();
-    });
+        document.getElementById('cancelCall').addEventListener('click', () => {
+            clearCallFormValues();
+        });
+    
+    }, 500);
    
 }
 

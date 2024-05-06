@@ -657,16 +657,25 @@ button a {
     .col-span-6 {
         grid-column: span 12 / span 12;
     }
+   
 }
 
 @media (max-width: 1100.98px) {
     .col-span-3 {
         grid-column: span 6 / span 6;
     }
+
+    .col-span-4 {
+        grid-column: span 6 / span 6;
+    }
 }
 
 @media (max-width: 657.98px) {
     .col-span-3 {
+        grid-column: span 12 / span 12;
+    }
+
+    .col-span-4 {
         grid-column: span 12 / span 12;
     }
 }
