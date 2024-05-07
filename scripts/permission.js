@@ -34,16 +34,18 @@ function controlPermission() {
     let registerUserAdmin = document.getElementById('registerUserAdmin');
     let controlCamAdmin = document.getElementById('controlCamAdmin');
     let adminBtnCall = document.getElementById('admin_btn_call');
+    let camPrincipal = document.getElementById('cam-principal');
 
     if(getPermissionProfile() === 'SUPPORT') {
         if(window.location.pathname !== '/central.html') {
-            window.location.pathname = '/not-found.html';
+            window.location.pathname = '/central.html';
         }
         else {
             registerUserAdmin.style.display = 'none';
             controlCamAdmin.style.display = 'none';
             adminBtnCall.style.display = 'none';
             selectAdmin.style.display = 'none';
+            camPrincipal.style.display = 'none';
             for (var i = 0; i < dashboardAdminAndCentral.length; i++) {
                 dashboardAdminAndCentral[i].style.display = 'none';
             }
@@ -51,7 +53,7 @@ function controlPermission() {
     }
     else if(getPermissionProfile() === 'CENTRAL') {
         if(window.location.pathname === '/cadastro-usuario.html') {
-            window.location.pathname = '/not-found.html';
+            window.location.pathname = '/central.html';
         }
         registerUserAdmin.style.display = 'none';
         selectAdmin.style.display = 'none';
