@@ -38,7 +38,8 @@
             </span>
             <ul class="dropdown-menu">
               <li id="registerUserAdmin"><a class="dropdown-item" href="cadastro-usuario.html">Cadastrar usuários</a></li>
-              <li><a class="dropdown-item" href="index.html">Logout</a></li>
+              <li id="controlCamAdmin"><a class="dropdown-item" href="cameras.html">Ver câmeras</a></li>
+              <li id="logout"><a class="dropdown-item" href="index.html">Logout</a></li>
             </ul>
         </div>
     </header>
@@ -50,19 +51,17 @@
                 <p>Gerencie os dados dos pórticos, encontre informações e analise sensores e câmeras.</p>
             </div>
             <div class="d-flex flex-wrap">
-                <button type="button" class="btn btn-danger me-3" type="button" data-bs-toggle="modal" data-bs-target="#modalChamado">Abrir chamado</button>
+                <button  id="admin_btn_call"  type="button" class="btn btn-danger me-3" type="button" data-bs-toggle="modal" data-bs-target="#modalChamado">Abrir chamado</button>
                 <select id="admin_selection" style="width: 250px;" class="form-select" aria-label="Default select example">
-                    <option>Selecione o pórtico</option>
-                    <option value="1">Rod. Fernão Dias, Km 596 (BR-381)</option>
-                    <option value="2">Rodovia Fernão Dias, Km 588, Itatiaiuçu - MG</option>
-                    <option value="3">Rodovia dos Bandeirantes, Km 58, Jundiaí - SP</option>
+                    <option value="Rodovia Fernão Dias, Km 588, Itatiaiuçu - MG">Rodovia Fernão Dias, Km 588, Itatiaiuçu - MG</option>
+                    <option value="Rodovia dos Bandeirantes, Km 58, Jundiaí - SP">Rodovia dos Bandeirantes, Km 58, Jundiaí - SP</option>
                   </select>
             </div>
         </section>
 
 
         <div class="w-100 text-center">
-        <div class="spinner-border spinner-border-lg" id="spinner-dashboard" role="status"></div>
+          <div class="spinner-border spinner-border-lg" id="spinner-dashboard" role="status"></div>
         </div>
 
         <div id="dashboard" class="visually-hidden">
@@ -73,7 +72,7 @@
                         <div class="col-span-6 mt-3">
                             <div class="card ">
                                 <div class="card-header">
-                                    Câmeras RFID
+                                    Sensores RFID
                                 </div>
                                 <div class="card-body">
                                     <div class="grid grid-cols-12 gap-2">
@@ -344,7 +343,7 @@
                             <div class="title-modal">
                               <h6>Temperatura</h6>
                               <span>
-                                Belo Horizonte, MG 
+                                <span id="localeWeather">Belo Horizonte, MG</span> 
                                 <i class="fa-solid fa-location-dot locale"></i>
                               </span>
                             </div>
@@ -376,16 +375,16 @@
 
                          <div class="d-flex justify-content-between align-items-center flex-wrap mt-4">
                           <div class="status-temperatura">
-                            <span>Temporal</span>
-                            <span class="ms-2">25° C</span>
+                            <span id="spanStatus">Temporal</span>
+                            <span id="spanTemp" class="ms-2">25° C</span>
                           </div>
 
                           <div>
-                            <span>Vento - 100 km/h</span>
+                            <span id="spanWind">Vento - 100 km/h</span>
                           </div>
 
                           <div>
-                            <span>Humidade - 60%</span>
+                            <span id="spanHumidity">Humidade - 60%</span>
                           </div>
                           
                         </div>
@@ -754,7 +753,7 @@
         </div>
       </div>
 
-      <div class="toast-container position-fixed top-0 end-0 p-3">
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
         <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header sucess-toast">
             <i class="fa-solid fa-circle-check me-2"></i>
@@ -763,13 +762,17 @@
             <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close">
             </button>
             </div>
+            <div class="toast-body">
+              Seu chamado foi cadastrado. Logo uma equipe entrará em contato.
+            </div>
         </div>
       </div>
 
     </div>
 
-      <script src="./scripts/cookie.js"></script>
-      <script src="./scripts/permission.js"></script>
-      <script src="./scripts/cards_controle_cameras.js"></script>
+    <script src="./scripts/permission.js"></script>
+    <script src="./scripts/header.js"></script>
+    <script src="./scripts/weather-locale.js"></script>
+    <script src="./scripts/control-cards-cam.js"></script>
 </body>
 </html>

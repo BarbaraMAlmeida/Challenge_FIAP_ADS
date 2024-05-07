@@ -244,6 +244,10 @@ button a {
     text-decoration: none;
 }
 
+.infravermelho {
+    filter: brightness(40%) contrast(130%) hue-rotate(-100deg) saturate(100%);
+}
+
 
 
 /* GRID */

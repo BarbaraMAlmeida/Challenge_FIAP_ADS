@@ -27,8 +27,8 @@
 <body>
     <header class="d-flex justify-content-between align-items-center flex-wrap">
         <div>
-            <h5>20:22</h5>
-            <h6>Sexta-feira | 22 de março, 2024</h6>
+            <h5 id="hourCurrent"></h5>
+            <h6 id="dateCurrent"></h6>
         </div>
         <div class="dropdown">
             <span class="dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -37,8 +37,9 @@
               <i class="fa-solid fa-chevron-down"></i>
             </span>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="cadastro-usuario.html">Cadastrar usuários</a></li>
-              <li><a class="dropdown-item" href="index.html">Logout</a></li>
+              <li id="registerUserAdmin"><a class="dropdown-item" href="cadastro-usuario.html">Cadastrar usuários</a></li>
+              <li id="controlCamAdmin"><a class="dropdown-item" href="cameras.html">Ver câmeras</a></li>
+              <li id="logout"><a class="dropdown-item" href="index.html">Logout</a></li>
             </ul>
         </div>
     </header>
@@ -100,7 +101,9 @@
                 <button class="btn btn-default mt-2" type="button" id="cancel">
                     Cancelar
                 </button>
-                <button class="btn btn-primary ms-3 mt-2" id="save">
+                <button class="btn btn-primary ms-3 mt-2 d-flex align-items-center" id="save">
+                    <div id="spinner" class="me-2 spinner-border spinner-border-sm visually-hidden" role="status">
+                    </div>
                     Salvar usuário
                 </button>
             </div>
@@ -123,11 +126,8 @@
     </div>
     </div>
 
-
-
     <script src="./scripts/permission.js"></script>
-    <script src="./scripts/cookie.js"></script>
-    <script src="./scripts/permission.js"></script>
-    <script src="./scripts/cards_controle_cameras.js"></script>
+    <script src="./scripts/register-user.js"></script>
+    <script src="./scripts/header.js"></script>
 </body>
 </html>

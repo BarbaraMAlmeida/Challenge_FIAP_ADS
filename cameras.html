@@ -27,13 +27,20 @@
 <body>
     <header class="d-flex justify-content-between align-items-center flex-wrap">
         <div>
-            <h5>20:22</h5>
-            <h6>Sexta-feira | 22 de março, 2024</h6>
+            <h5 id="hourCurrent"></h5>
+            <h6 id="dateCurrent"></h6>
         </div>
-        <div class="d-flex align-items-center">
-            <img class="me-3" src="./assets/profile3.jpg" alt="">
-            <p class="me-3">Fernando Nascimento</p>
-            <i class="fa-solid fa-chevron-down"></i>
+        <div class="dropdown">
+            <span class="dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="me-3" src="./assets/profile3.jpg" alt="">
+              <p class="me-3">Fernando Nascimento</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </span>
+            <ul class="dropdown-menu">
+              <li id="registerUserAdmin"><a class="dropdown-item" href="cadastro-usuario.html">Cadastrar usuários</a></li>
+              <li id="controlCamAdmin"><a class="dropdown-item" href="cameras.html">Ver câmeras</a></li>
+              <li id="logout"><a class="dropdown-item" href="index.html">Logout</a></li>
+            </ul>
         </div>
     </header>
 
@@ -51,41 +58,15 @@
             </div>
         </section>
 
+        <div class="w-100 text-center">
+            <div class="spinner-border spinner-border-lg" id="spinner-dashboard" role="status"></div>
+        </div>
 
+        <div id="dashboard" class="visually-hidden">
         <section class="dashboard">
             <div class="grid grid-cols-12 gap-3">
                 <div class="col-span-12">
-                    <div class="grid grid-cols-12 gap-3">
-                        <div class="col-span-12 mt-3">
-                            <div class="card ">
-                                <div class="card-header">
-                                    Câmeras RFID
-                                </div>
-                                <div class="card-body">
-                                    <div class="grid grid-cols-12 gap-2">
-                                     <div class="card-dashboard-item col-span-6">
-                                         <h5 class="title-card">Sensor - CDF22</h5>
-                                         <video autoplay loop muted style="width: 100%;">
-                                            <source src="./assets/camera_01.webm" type="video/mp4">
-                                            <!-- Mensagem para navegadores que não suportam a tag <video> -->
-                                            Seu navegador não suporta vídeos incorporados.
-                                        </video>
-                                      </div>
- 
-                                      <div class="card-dashboard-item col-span-6">
-                                         <h5 class="title-card">Sensor - CDF22</h5>
-                                         <video autoplay loop muted style="width: 100%;">
-                                            <source src="./assets/camera_01.webm" type="video/mp4">
-                                            <!-- Mensagem para navegadores que não suportam a tag <video> -->
-                                            Seu navegador não suporta vídeos incorporados.
-                                        </video>
-                                      </div>
-                                    </div>
-                                 </div>
-                            </div>
-
-                        </div>
-                        
+                    <div class="grid grid-cols-12 gap-3"> 
                         <div class="col-span-12 mt-3">
                             <div class="card ">
                                 <div class="card-header">
@@ -94,7 +75,7 @@
                                 <div class="card-body">
                                     <div class="grid grid-cols-12 gap-2">
                                      <div class="card-dashboard-item col-span-6">
-                                         <h5 class="title-card">Sensor - CDF22</h5>
+                                         <h5 class="title-card">Câmera - CDF23</h5>
                                          <video autoplay loop muted style="width: 100%;">
                                             <source src="./assets/camera_01.webm" type="video/mp4">
                                             <!-- Mensagem para navegadores que não suportam a tag <video> -->
@@ -103,7 +84,7 @@
                                       </div>
  
                                       <div class="card-dashboard-item col-span-6">
-                                         <h5 class="title-card">Sensor - CDF22</h5>
+                                         <h5 class="title-card">Câmera - CDF24</h5>
                                          <video autoplay loop muted style="width: 100%;">
                                             <source src="./assets/camera_01.webm" type="video/mp4">
                                             <!-- Mensagem para navegadores que não suportam a tag <video> -->
@@ -115,44 +96,44 @@
                             </div>
 
                         </div>
-                        <div class="col-span-12 mt-3">
+                        <div class="col-span-12">
                             <div class="card">
                                 <div class="card-header">
-                                    Iluminação Infravermelha
+                                    Câmeras Estereoscópicas
                                 </div>
                                 <div class="card-body">
                                     <div class="grid grid-cols-12 gap-2">
                                      <div class="card-dashboard-item col-span-3">
-                                         <h5 class="title-card">Sensor - CDF22</h5>
+                                         <h5 class="title-card">Câmera - EST22</h5>
                                          <video autoplay loop muted style="width: 100%;">
-                                            <source src="./assets/camera_01.webm" type="video/mp4">
+                                            <source src="./assets/camera_03.mp4" type="video/mp4">
                                             <!-- Mensagem para navegadores que não suportam a tag <video> -->
                                             Seu navegador não suporta vídeos incorporados.
                                         </video>
                                       </div>
 
                                       <div class="card-dashboard-item col-span-3">
-                                        <h5 class="title-card">Sensor - CDF22</h5>
+                                        <h5 class="title-card">Câmera - EST23</h5>
                                         <video autoplay loop muted style="width: 100%;">
-                                            <source src="./assets/camera_01.webm" type="video/mp4">
+                                            <source src="./assets/camera_03.mp4" type="video/mp4">
                                             <!-- Mensagem para navegadores que não suportam a tag <video> -->
                                             Seu navegador não suporta vídeos incorporados.
                                         </video>
                                      </div>
 
                                       <div class="card-dashboard-item col-span-3">
-                                        <h5 class="title-card">Sensor - CDF22</h5>
+                                        <h5 class="title-card">Câmera - EST24</h5>
                                         <video autoplay loop muted style="width: 100%;">
-                                            <source src="./assets/camera_01.webm" type="video/mp4">
+                                            <source src="./assets/camera_03.mp4" type="video/mp4">
                                             <!-- Mensagem para navegadores que não suportam a tag <video> -->
                                             Seu navegador não suporta vídeos incorporados.
                                         </video>
                                      </div>
  
                                       <div class="card-dashboard-item col-span-3">
-                                         <h5 class="title-card">Sensor - CDF22</h5>
+                                         <h5 class="title-card">Câmera - EST25</h5>
                                          <video autoplay loop muted style="width: 100%;">
-                                            <source src="./assets/camera_01.webm" type="video/mp4">
+                                            <source src="./assets/camera_03.mp4" type="video/mp4">
                                             <!-- Mensagem para navegadores que não suportam a tag <video> -->
                                             Seu navegador não suporta vídeos incorporados.
                                         </video>
@@ -161,48 +142,46 @@
                                  </div>
                               </div>
                         </div>
+
+
                         <div class="col-span-12">
-                            <nav class="nav">
-                                <a class="nav-link active" aria-current="page" href="#">Câmeras Estereoscópicas</a>
-                                <a class="nav-link" href="#">Câmeras Auxiliares</a>
-                              </nav>
                             <div class="card">
                                 <div class="card-header">
-                                    Câmeras Estereoscópicas
+                                    Câmeras Auxiliares
                                 </div>
                                 <div class="card-body">
                                     <div class="grid grid-cols-12 gap-2">
                                      <div class="card-dashboard-item col-span-3">
-                                         <h5 class="title-card">Sensor - CDF22</h5>
+                                         <h5 class="title-card">Câmera - EST22</h5>
                                          <video autoplay loop muted style="width: 100%;">
-                                            <source src="./assets/camera_01.webm" type="video/mp4">
+                                            <source src="./assets/camera_03.mp4" type="video/mp4">
                                             <!-- Mensagem para navegadores que não suportam a tag <video> -->
                                             Seu navegador não suporta vídeos incorporados.
                                         </video>
                                       </div>
 
                                       <div class="card-dashboard-item col-span-3">
-                                        <h5 class="title-card">Sensor - CDF22</h5>
+                                        <h5 class="title-card">Câmera - EST23</h5>
                                         <video autoplay loop muted style="width: 100%;">
-                                            <source src="./assets/camera_01.webm" type="video/mp4">
+                                            <source src="./assets/camera_03.mp4" type="video/mp4">
                                             <!-- Mensagem para navegadores que não suportam a tag <video> -->
                                             Seu navegador não suporta vídeos incorporados.
                                         </video>
                                      </div>
 
                                       <div class="card-dashboard-item col-span-3">
-                                        <h5 class="title-card">Sensor - CDF22</h5>
+                                        <h5 class="title-card">Câmera - EST24</h5>
                                         <video autoplay loop muted style="width: 100%;">
-                                            <source src="./assets/camera_01.webm" type="video/mp4">
+                                            <source src="./assets/camera_03.mp4" type="video/mp4">
                                             <!-- Mensagem para navegadores que não suportam a tag <video> -->
                                             Seu navegador não suporta vídeos incorporados.
                                         </video>
                                      </div>
  
                                       <div class="card-dashboard-item col-span-3">
-                                         <h5 class="title-card">Sensor - CDF22</h5>
+                                         <h5 class="title-card">Câmera - EST25</h5>
                                          <video autoplay loop muted style="width: 100%;">
-                                            <source src="./assets/camera_01.webm" type="video/mp4">
+                                            <source src="./assets/camera_03.mp4" type="video/mp4">
                                             <!-- Mensagem para navegadores que não suportam a tag <video> -->
                                             Seu navegador não suporta vídeos incorporados.
                                         </video>
@@ -220,16 +199,21 @@
             <div class="card mt-3">
                 <div class="card-header d-flex justify-content-between align-items-center">
                     Câmera principal
-                    <a href="cameras.html">Clique aqui e gerencie as câmeras</a>
                 </div>
                 <div class="card-body">
                   <!-- <img class="rounded" src="./assets/pedagio.svg" alt="" width="100%"> -->
                   <video autoplay loop muted style="width: 100%;">
-                    <source src="./assets/camera_01.webm" type="video/mp4">
+                    <source src="./assets/camera_02.mp4" type="video/mp4">
                     <!-- Mensagem para navegadores que não suportam a tag <video> -->
                     Seu navegador não suporta vídeos incorporados.
                 </video>
                 </div>
             </div>
         </section>
+        </div>
     </section>
+
+    <script src="./scripts/permission.js"></script>
+    <script src="./scripts/infravermelho-cam.js"></script>
+    <script src="./scripts/header.js"></script>
+</body>
