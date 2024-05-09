@@ -652,17 +652,28 @@ button a {
   .col-span-6 {
     grid-column: span 12 / span 12;
   }
+
+  .wallpaper {
+    display: none;
+  }
 }
 
 @media (max-width: 1100.98px) {
   .col-span-3 {
     grid-column: span 6 / span 6;
   }
+  .wallpaper {
+    display: none;
+  }
 }
 
 @media (max-width: 657.98px) {
   .col-span-3 {
     grid-column: span 12 / span 12;
+  }
+
+  .wallpaper {
+    display: none;
   }
 }
 
