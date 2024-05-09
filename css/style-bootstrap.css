@@ -1,154 +1,146 @@
-@import url('../css/style.css');
+@import url("../css/style.css");
 
 /* Todos os componentes bootstrap modificados em quesito estilo devem ser adicionados aqui */
-
 
 /* Botões  */
 
 .btn-primary {
-    background-color: var(--colorPrimary) !important; 
-    border: none;
-    font-family: 'Poppins';
-    font-weight: 300;
-    border-radius: 8px;
+  background-color: var(--colorPrimary) !important;
+  border: none;
+  font-family: "Poppins";
+  font-weight: 300;
+  border-radius: 8px;
 }
-
 
 .btn-secondary {
-    background-color: var(--pinkDark) !important; 
-    border: none;
-    font-family: 'Poppins';
-    font-weight: 300;
-    border-radius: 8px;
-    font-size: 16px;
+  background-color: var(--pinkDark) !important;
+  border: none;
+  font-family: "Poppins";
+  font-weight: 300;
+  border-radius: 8px;
+  font-size: 16px;
 }
 
-
 .btn-danger {
-    background-color: var(--feedbackError) !important; 
-    border: none;
-    font-family: "Montserrat";
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 8px;
+  background-color: var(--feedbackError) !important;
+  border: none;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
 }
 
 .btn-default {
-    background-color: var(--white) !important; 
-    border: 1px solid var(--grayDefault);
-    color: var(--grayDefault);
-    font-family: "Montserrat";
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 8px;
+  background-color: var(--white) !important;
+  border: 1px solid var(--grayDefault);
+  color: var(--grayDefault);
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
 }
 
 .btn-success {
-    background-color: var(--green) !important; 
-    border: 1px solid var(--green);
-    color: var(--white);
-    font-family: "Montserrat";
-    font-size: 14px;
-    font-weight: 600;
-    border-radius: 8px;
+  background-color: var(--green) !important;
+  border: 1px solid var(--green);
+  color: var(--white);
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
 }
 
 .btn-default:hover {
-    background-color: var(--white) !important; 
-    border: 1px solid var(--grayDefault);
-    color: var(--grayDefault);
-    font-family: "Montserrat";
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 8px;
+  background-color: var(--white) !important;
+  border: 1px solid var(--grayDefault);
+  color: var(--grayDefault);
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
 }
 
 .btn-info {
-    background-color: var(--pinkDark) !important; 
-    border:none;
-    color: var(--white);
-    font-family: "Montserrat";
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 8px;
-    width: 120px;
+  background-color: var(--pinkDark) !important;
+  border: none;
+  color: var(--white);
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  width: 120px;
 }
 
 .btn-info:hover {
-    background-color: var(--pinkLight) !important; 
-    border: none;
-    color: var(--white);
-    font-family: "Montserrat";
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 8px;
-    width: 120px;
+  background-color: var(--pinkLight) !important;
+  border: none;
+  color: var(--white);
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  width: 120px;
 }
-
 
 /* Container */
 
 .container {
-    margin-top: 42px;
-    min-height: 90vh;
+  margin-top: 42px;
+  min-height: 90vh;
 }
 
 .container-fluid {
-    padding: 24px;
+  padding: 24px;
 }
-
 
 /* Card */
 
 .card {
-    border: none;
-    background: var(--white);
-    font-weight: 500;
+  border: none;
+  background: var(--white);
+  font-weight: 500;
 }
 
 .card-header {
-    background: var(--white);
-    font-family: 'Montserrat';
-    color: var(--grayDefault);
+  background: var(--white);
+  font-family: "Montserrat";
+  color: var(--grayDefault);
 }
-
-
 
 /* Select e Formulario */
 
 .form-select {
-   border: 1px solid var(--bordergray); 
-   border-radius: 8px;
-   color: var(--grayDefault);
+  border: 1px solid var(--bordergray);
+  border-radius: 8px;
+  color: var(--grayDefault);
 }
 
-
 .form-select:active {
-    border: 2px solid var(--bordergray); 
-    border-radius: 8px;
-    box-shadow: none;
+  border: 2px solid var(--bordergray);
+  border-radius: 8px;
+  box-shadow: none;
 }
 
 .form-select:focus {
-    border: 2px solid var(--bordergray); 
-    border-radius: 8px;
-    box-shadow: none;
+  border: 2px solid var(--bordergray);
+  border-radius: 8px;
+  box-shadow: none;
 }
 
 select:active {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .form-select:hover {
-    border: 2px solid var(--bordergray); 
-    border-radius: 8px;
-    box-shadow: none;
+  border: 2px solid var(--bordergray);
+  border-radius: 8px;
+  box-shadow: none;
 }
 
 .form-control {
-   border: 1px solid var(--bordergray); 
-   border-radius: 8px;
-   color: var(--grayDefault);
+  border: 1px solid var(--bordergray);
+  border-radius: 8px;
+  color: var(--grayDefault);
 }
 
 .form-control:active {
@@ -159,9 +151,9 @@ select:active {
 }
 
 .form-control:hover {
-    border: 2px solid var(--bordergray); 
-    border-radius: 8px;
-    box-shadow: none;
+  border: 2px solid var(--bordergray);
+  border-radius: 8px;
+  box-shadow: none;
 }
 
 .form-control:focus {
@@ -171,34 +163,30 @@ select:active {
     background-color: transparent;
 }
 
-
 textarea.form-control {
-    min-height: 100px;
-    resize: none;
+  min-height: 100px;
+  resize: none;
 }
-
-
-
 
 /* Nav e Tabs */
 
 .nav-link {
-    display: block;
-    padding: 16px 16px 16px 0px;
-    font-size: var(--bs-nav-link-font-size);
-    font-weight: var(--bs-nav-link-font-weight);
-    color: var(--bs-nav-link-color);
-    text-decoration: none;
-    background: 0 0;
-    border: 0;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+  display: block;
+  padding: 16px 16px 16px 0px;
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: var(--bs-nav-link-color);
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
 }
-
 
 /* BACKGROUND AND PROGRESS */
 .bg-success {
-    --bs-bg-opacity: 1;
-    background-color: var(--green) !important;
+  --bs-bg-opacity: 1;
+  background-color: var(--green) !important;
 }
 
 .bg-god {
@@ -207,8 +195,8 @@ textarea.form-control {
 }
 
 .bg-warning {
-    --bs-bg-opacity: 1;
-    background-color: var(--warning) !important;
+  --bs-bg-opacity: 1;
+  background-color: var(--warning) !important;
 }
 
 .bg-info {
@@ -220,7 +208,6 @@ textarea.form-control {
     --bs-bg-opacity: 1;
     background-color: var(--errorWarning) !important;
 }
-
 
 /* Tags */
 
@@ -284,18 +271,16 @@ textarea.form-control {
     border-radius: 8px;
 }
 
-
 .dropdown-toggle::after {
-    display: none;
+  display: none;
 }
 
-
 .dropdown-item:hover {
-    background-color: var(--bordergray);
+  background-color: var(--bordergray);
 }
 
 .dropdown-item:active {
-    color: var(--black);
+  color: var(--black);
 }
 
 .toast-body {

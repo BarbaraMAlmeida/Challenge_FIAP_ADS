@@ -1,7 +1,7 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 :root {
@@ -27,161 +27,165 @@
 }
 
 body {
-    background: var(--backgroundLight);
+  background: var(--backgroundLight);
 }
 
 p {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Poppins';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins";
 }
 
 .btn {
-    height: 40px;
+  height: 40px;
 }
 
 .locale {
-    color: var(--errorWarning);
+  color: var(--errorWarning);
 }
 
 i.dropdown-toggle {
- font-size: 18px;
+  font-size: 18px;
 }
 
 .form-user {
-    box-shadow: 2px 2px 8px #bbbb;
-    border-radius: 16px;
+  box-shadow: 2px 2px 8px #bbbb;
+  border-radius: 16px;
 
-    div.card {
-        border-radius: 16px;
-    }
+  div.card {
+    border-radius: 16px;
+  }
 }
 
 .title-modal {
-    font-weight: 400;
-    color: var(--grayDefault);
+  font-weight: 400;
+  color: var(--grayDefault);
 
-    h6 {
-        font-size: 16px;
-        padding: 0px;
-        margin: 0px;
-    }
+  h6 {
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+  }
 
-    span {
-        font-weight: 500;
-        font-size: 13px
-    }
+  span {
+    font-weight: 500;
+    font-size: 13px;
+  }
 }
 
 select {
-    height: 40px;
+  height: 40px;
 }
 
 input {
-    height: 40px;
-    border: 1px solid var(--bordergray); 
-    border-radius: 8px;
+  height: 40px;
+  border: 1px solid var(--bordergray);
+  border-radius: 8px;
 }
 
 label {
-    color: var(--grayDefault);
-    font-weight: 400;
+  color: var(--grayDefault);
+  font-weight: 400;
 }
 
 div.walppaper {
-    img {
-        width: 100%;
-        height: 90vh;
-        object-fit: contain;
-    }
+  img {
+    width: 100%;
+    height: 90vh;
+    object-fit: contain;
+  }
 }
 
 .temperatura {
-    font-size: 16px;
-    font-weight: 400;
+  font-size: 16px;
+  font-weight: 400;
 
-    h6 {
-        color: var(--grayDefault);
-    }
-    
-    span {
-        font-size: 16px;
-        color: var(--grayFeedback);
-    }
+  h6 {
+    color: var(--grayDefault);
+  }
+
+  span {
+    font-size: 16px;
+    color: var(--grayFeedback);
+  }
 }
 
 .warning {
-    background-color: var(--errorWarning);
-    border-radius: 6px;
-    padding: 8px;
+  background-color: var(--errorWarning);
+  border-radius: 6px;
+  padding: 8px;
 
-    span {
-        color: var(--white);       
-    }
-    
+  span {
+    color: var(--white);
+  }
 }
 
 h6.warning-title {
-    color: var(--errorWarning);
+  color: var(--errorWarning);
 }
 
 div.status-temperatura span {
-    color: var(--blueSecondary);
-    font-weight: 700;
+  color: var(--blueSecondary);
+  font-weight: 700;
 }
 
 .card-header a {
-    font-size: 14px;
-    text-decoration: none;
-    color: var(--colorPrimary);
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--colorPrimary);
 }
 
 .card-header a:hover {
-    text-decoration: underline;
-    color: var(--colorPrimary);
+  text-decoration: underline;
+  color: var(--colorPrimary);
 }
 
 header {
-    padding: 16px 24px;
-    background-color: var(--colorPrimary);
-    color: var(--white);
+  padding: 16px 24px;
+  background-color: var(--colorPrimary);
+  color: var(--white);
 
-    img {
-        width: 37px;
-        height: 37px;
-        object-fit: cover;
-        clip-path: circle();
-    }
+  img {
+    width: 37px;
+    height: 37px;
+    object-fit: cover;
+    clip-path: circle();
+  }
 
-    h5 {
-        font-size: 24px;
-    }
+  h5 {
+    font-size: 24px;
+  }
 
-    h6 {
-        font-size: 14px;
-        font-weight: 400;
-    }
+  h6 {
+    font-size: 14px;
+    font-weight: 400;
+  }
 
-    p {
-        padding: 0px;
-        margin: 0px;
-        font-size: 16px;
-        font-weight: 500;
-    }
+  p {
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 500;
+  }
 
-    i {
-        color: var(--green);
-    }
+  i {
+    color: var(--green);
+  }
 }
 
 .header-page {
-    h6 {
-        color: var(--colorPrimary);
-        font-weight: 600;
-    }
+  h6 {
+    color: var(--colorPrimary);
+    font-weight: 600;
+  }
 }
 
 .sucess-toast {
@@ -192,56 +196,60 @@ header {
 
 
 span {
-    font-size: 12px;
-    font-family: 'Poppins';
+  font-size: 12px;
+  font-family: "Poppins";
 }
 
 .title-card {
-    font-family: 'Poppins';
-    font-weight: 400;
-    font-size: 16px;
-    margin-top: 4px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 4px;
 }
 
 .title-card-payments {
-    font-family: 'Poppins';
-    font-weight: 400;
-    font-size: 16px;
-    margin-top: 4px;
-    color: var(--grayDefault);
-    
-    span {
-        font-size: 16px;
-        font-weight: 500;
-    }
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 4px;
+  color: var(--grayDefault);
 
-    i {
-        font-size: 16px;
-    }
+  span {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  i {
+    font-size: 16px;
+  }
 }
 
 .information {
-    color: var(--colorPrimary);
-    font-weight: 600;
-    font-size: 14px;
+  color: var(--colorPrimary);
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .value {
-    color: var(--grayDefault);
-    font-weight: 500;
-    font-size: 14px;
+  color: var(--grayDefault);
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .card-dashboard-item {
-    background: linear-gradient(to bottom right, rgba(217, 217, 217, 0.405), rgba(217, 217, 217, 0.011));
-    padding: 8px 16px;
-    border-radius: 8px;
-    box-shadow: 4px 4px 10 rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    to bottom right,
+    rgba(217, 217, 217, 0.405),
+    rgba(217, 217, 217, 0.011)
+  );
+  padding: 8px 16px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 10 rgba(0, 0, 0, 0.1);
 }
 
 button a {
-    color: var(--white);
-    text-decoration: none;
+  color: var(--white);
+  text-decoration: none;
 }
 
 .infravermelho {
@@ -253,409 +261,406 @@ button a {
 /* GRID */
 
 .grid {
-    display: grid;
+  display: grid;
 }
 
 /* colunas do grid */
 
 .grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .grid-cols-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .grid-cols-7 {
-    grid-template-columns: repeat(7, minmax(0, 1fr));
+  grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 
 .grid-cols-8 {
-    grid-template-columns: repeat(8, minmax(0, 1fr));
+  grid-template-columns: repeat(8, minmax(0, 1fr));
 }
 
 .grid-cols-9 {
-    grid-template-columns: repeat(9, minmax(0, 1fr));
+  grid-template-columns: repeat(9, minmax(0, 1fr));
 }
 
 .grid-cols-10 {
-    grid-template-columns: repeat(10, minmax(0, 1fr));
+  grid-template-columns: repeat(10, minmax(0, 1fr));
 }
 
 .grid-cols-11 {
-    grid-template-columns: repeat(11, minmax(0, 1fr));
+  grid-template-columns: repeat(11, minmax(0, 1fr));
 }
 
 .grid-cols-12 {
-    grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
 .grid-cols-none {
-    grid-template-columns: none;
+  grid-template-columns: none;
 }
 
 .grid-cols-subgrid {
-    grid-template-columns: subgrid;
+  grid-template-columns: subgrid;
 }
-
 
 /* tamanho das colunas */
 .col-auto {
-    grid-column: auto;
+  grid-column: auto;
 }
 
 .col-span-1 {
-    grid-column: span 1 / span 1;
+  grid-column: span 1 / span 1;
 }
 
 .col-span-2 {
-    grid-column: span 2 / span 2;
+  grid-column: span 2 / span 2;
 }
 
 .col-span-3 {
-    grid-column: span 3 / span 3;
+  grid-column: span 3 / span 3;
 }
 
 .col-span-4 {
-    grid-column: span 4 / span 4;
+  grid-column: span 4 / span 4;
 }
 
 .col-span-5 {
-    grid-column: span 5 / span 5;
+  grid-column: span 5 / span 5;
 }
 
 .col-span-6 {
-    grid-column: span 6 / span 6;
+  grid-column: span 6 / span 6;
 }
 
 .col-span-7 {
-    grid-column: span 7 / span 7;
+  grid-column: span 7 / span 7;
 }
 
 .col-span-8 {
-    grid-column: span 8 / span 8;
+  grid-column: span 8 / span 8;
 }
 
 .col-span-9 {
-    grid-column: span 9 / span 9;
+  grid-column: span 9 / span 9;
 }
 
 .col-span-10 {
-    grid-column: span 10 / span 10;
+  grid-column: span 10 / span 10;
 }
 
 .col-span-11 {
-    grid-column: span 11 / span 11;
+  grid-column: span 11 / span 11;
 }
 
 .col-span-12 {
-    grid-column: span 12 / span 12;
+  grid-column: span 12 / span 12;
 }
 
 .col-span-full {
-    grid-column: 1 / -1;
+  grid-column: 1 / -1;
 }
 
 .col-start-1 {
-    grid-column-start: 1;
+  grid-column-start: 1;
 }
 
 .col-start-2 {
-    grid-column-start: 2;
+  grid-column-start: 2;
 }
 
 .col-start-3 {
-    grid-column-start: 3;
+  grid-column-start: 3;
 }
 
 .col-start-4 {
-    grid-column-start: 4;
+  grid-column-start: 4;
 }
 
 .col-start-5 {
-    grid-column-start: 5;
+  grid-column-start: 5;
 }
 
 .col-start-6 {
-    grid-column-start: 6;
+  grid-column-start: 6;
 }
 
 .col-start-7 {
-    grid-column-start: 7;
+  grid-column-start: 7;
 }
 
 .col-start-8 {
-    grid-column-start: 8;
+  grid-column-start: 8;
 }
 
 .col-start-9 {
-    grid-column-start: 9;
+  grid-column-start: 9;
 }
 
 .col-start-10 {
-    grid-column-start: 10;
+  grid-column-start: 10;
 }
 
 .col-start-11 {
-    grid-column-start: 11;
+  grid-column-start: 11;
 }
 
 .col-start-12 {
-    grid-column-start: 12;
+  grid-column-start: 12;
 }
 
 .col-start-13 {
-    grid-column-start: 13;
+  grid-column-start: 13;
 }
 
 .col-start-auto {
-    grid-column-start: auto;
+  grid-column-start: auto;
 }
 
 .col-end-1 {
-    grid-column-end: 1;
+  grid-column-end: 1;
 }
 
 .col-end-2 {
-    grid-column-end: 2;
+  grid-column-end: 2;
 }
 
 .col-end-3 {
-    grid-column-end: 3;
+  grid-column-end: 3;
 }
 
 .col-end-4 {
-    grid-column-end: 4;
+  grid-column-end: 4;
 }
 
 .col-end-5 {
-    grid-column-end: 5;
+  grid-column-end: 5;
 }
 
 .col-end-6 {
-    grid-column-end: 6;
+  grid-column-end: 6;
 }
 
 .col-end-7 {
-    grid-column-end: 7;
+  grid-column-end: 7;
 }
 
 .col-end-8 {
-    grid-column-end: 8;
+  grid-column-end: 8;
 }
 
 .col-end-9 {
-    grid-column-end: 9;
+  grid-column-end: 9;
 }
 
 .col-end-10 {
-    grid-column-end: 10;
+  grid-column-end: 10;
 }
 
 .col-end-11 {
-    grid-column-end: 11;
+  grid-column-end: 11;
 }
 
 .col-end-12 {
-    grid-column-end: 12;
+  grid-column-end: 12;
 }
 
 .col-end-13 {
-    grid-column-end: 13;
+  grid-column-end: 13;
 }
 
 .col-end-auto {
-    grid-column-end: auto;
+  grid-column-end: auto;
 }
-
 
 /* Grid row start/end */
 
 .row-auto {
-    grid-row: auto;
+  grid-row: auto;
 }
 
 .row-span-1 {
-    grid-row: span 1 / span 1;
+  grid-row: span 1 / span 1;
 }
 
 .row-span-2 {
-    grid-row: span 2 / span 2;
+  grid-row: span 2 / span 2;
 }
 
 .row-span-3 {
-    grid-row: span 3 / span 3;
-    border: 2px solid red;
+  grid-row: span 3 / span 3;
+  border: 2px solid red;
 }
 
 .row-span-4 {
-    grid-row: span 4 / span 4;
+  grid-row: span 4 / span 4;
 }
 
 .row-span-5 {
-    grid-row: span 5 / span 5;
+  grid-row: span 5 / span 5;
 }
 
 .row-span-6 {
-    grid-row: span 6 / span 6;
+  grid-row: span 6 / span 6;
 }
 
 .row-span-7 {
-    grid-row: span 7 / span 7;
+  grid-row: span 7 / span 7;
 }
 
 .row-span-8 {
-    grid-row: span 8 / span 8;
+  grid-row: span 8 / span 8;
 }
 
 .row-span-9 {
-    grid-row: span 9 / span 9;
+  grid-row: span 9 / span 9;
 }
 
 .row-span-10 {
-    grid-row: span 10 / span 10;
+  grid-row: span 10 / span 10;
 }
 
 .row-span-11 {
-    grid-row: span 11 / span 11;
+  grid-row: span 11 / span 11;
 }
 
 .row-span-12 {
-    grid-row: span 12 / span 12;
+  grid-row: span 12 / span 12;
 }
 
 .row-span-full {
-    grid-row: 1 / -1;
+  grid-row: 1 / -1;
 }
 
 .row-start-1 {
-    grid-row-start: 1;
+  grid-row-start: 1;
 }
 
 .row-start-2 {
-    grid-row-start: 2;
+  grid-row-start: 2;
 }
 
 .row-start-3 {
-    grid-row-start: 3;
+  grid-row-start: 3;
 }
 
 .row-start-4 {
-    grid-row-start: 4;
+  grid-row-start: 4;
 }
 
 .row-start-5 {
-    grid-row-start: 5;
+  grid-row-start: 5;
 }
 
 .row-start-6 {
-    grid-row-start: 6;
+  grid-row-start: 6;
 }
 
 .row-start-7 {
-    grid-row-start: 7;
+  grid-row-start: 7;
 }
 
 .row-start-8 {
-    grid-row-start: 8;
+  grid-row-start: 8;
 }
 
 .row-start-9 {
-    grid-row-start: 9;
+  grid-row-start: 9;
 }
 
 .row-start-10 {
-    grid-row-start: 10;
+  grid-row-start: 10;
 }
 
 .row-start-11 {
-    grid-row-start: 11;
+  grid-row-start: 11;
 }
 
 .row-start-12 {
-    grid-row-start: 12;
+  grid-row-start: 12;
 }
 
 .row-start-13 {
-    grid-row-start: 13;
+  grid-row-start: 13;
 }
 
 .row-start-auto {
-    grid-row-start: auto;
+  grid-row-start: auto;
 }
 
 .row-end-1 {
-    grid-row-end: 1;
+  grid-row-end: 1;
 }
 
 .row-end-2 {
-    grid-row-end: 2;
+  grid-row-end: 2;
 }
 
 .row-end-3 {
-    grid-row-end: 3;
+  grid-row-end: 3;
 }
 
 .row-end-4 {
-    grid-row-end: 4;
+  grid-row-end: 4;
 }
 
 .row-end-5 {
-    grid-row-end: 5;
+  grid-row-end: 5;
 }
 
 .row-end-6 {
-    grid-row-end: 6;
+  grid-row-end: 6;
 }
 
 .row-end-7 {
-    grid-row-end: 7;
+  grid-row-end: 7;
 }
 
 .row-end-8 {
-    grid-row-end: 8;
+  grid-row-end: 8;
 }
 
 .row-end-9 {
-    grid-row-end: 9;
+  grid-row-end: 9;
 }
 
 .row-end-10 {
-    grid-row-end: 10;
+  grid-row-end: 10;
 }
 
 .row-end-11 {
-    grid-row-end: 11;
+  grid-row-end: 11;
 }
 
 .row-end-12 {
-    grid-row-end: 12;
+  grid-row-end: 12;
 }
 
 .row-end-13 {
-    grid-row-end: 13;
+  grid-row-end: 13;
 }
 
 .row-end-auto {
-    grid-row-end: auto;
+  grid-row-end: auto;
 }
-
 
 @media (max-width: 1100.98px) {
     .col-span-6 {
@@ -684,4 +689,88 @@ button a {
     }
 }
 
+/* Card Clima */
 
+/* Card Clima */
+
+.card-clima {
+  border-radius: 25px;
+  margin: 1px;
+}
+
+#sol {
+  background: rgb(253, 212, 148);
+  background: linear-gradient(
+    0deg,
+    rgba(118, 181, 253, 1) 0%,
+    rgba(253, 212, 148, 1) 100%
+  );
+}
+
+#chuva {
+  background: rgb(46, 56, 73);
+  background: linear-gradient(
+    0deg,
+    rgba(109, 133, 173, 1) 0%,
+    rgba(46, 56, 73, 1) 100%
+  );
+}
+
+#vento {
+  background: rgb(67, 102, 142);
+  background: linear-gradient(
+    0deg,
+    rgba(116, 180, 253, 1) 0%,
+    rgba(67, 102, 142, 1) 100%
+  );
+}
+
+.separador {
+  background-color: var(--backgroundLight);
+  height: 7px;
+  width: 65px;
+  border-radius: 25px;
+  display: block;
+  margin: 10px auto;
+}
+
+.clima-icon {
+  display: block;
+  margin: 80px auto 40px;
+  align-items: center;
+  justify-content: center;
+  max-width: 70px;
+  max-height: 70px;
+}
+
+h5.card-title {
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 32px;
+  color: var(--backgroundLight);
+}
+
+.card-temp {
+  text-align: center;
+  font-size: 24px;
+  color: var(--backgroundLight);
+  font-weight: 800;
+  margin: 10px;
+}
+
+.card-temp > b {
+  font-family: "Montserrat";
+  font-weight: 800;
+  color: var(--blueSecondary);
+  font-size: 24px;
+  margin: 10px;
+}
+
+.card-text {
+  text-align: center;
+  font-size: 16px;
+  color: var(--backgroundLight);
+  margin: 0;
+}
+/* Espaçamento entre os retângulos */
