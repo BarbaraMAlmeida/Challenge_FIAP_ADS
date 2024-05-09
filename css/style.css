@@ -16,6 +16,7 @@
   --grayFeedback: #808080;
   --grayDefault: #4e4e4e;
   --green: #a4ce46;
+  --greenDark: #597f07;
   --warning: #e5a801;
   --white: #ffff;
   --black: #00000;
@@ -187,6 +188,12 @@ header {
   }
 }
 
+.sucess-toast {
+  background-color: var(--greenDark);
+  color: var(--white);
+  font-weight: 500;
+}
+
 span {
   font-size: 12px;
   font-family: "Poppins";
@@ -242,6 +249,10 @@ span {
 button a {
   color: var(--white);
   text-decoration: none;
+}
+
+.infravermelho {
+  filter: brightness(40%) contrast(130%) hue-rotate(-100deg) saturate(100%);
 }
 
 /* GRID */
@@ -652,7 +663,6 @@ button a {
   .col-span-6 {
     grid-column: span 12 / span 12;
   }
-
   .wallpaper {
     display: none;
   }
@@ -660,6 +670,10 @@ button a {
 
 @media (max-width: 1100.98px) {
   .col-span-3 {
+    grid-column: span 6 / span 6;
+  }
+
+  .col-span-4 {
     grid-column: span 6 / span 6;
   }
   .wallpaper {
@@ -672,6 +686,9 @@ button a {
     grid-column: span 12 / span 12;
   }
 
+  .col-span-4 {
+    grid-column: span 12 / span 12;
+  }
   .wallpaper {
     display: none;
   }
