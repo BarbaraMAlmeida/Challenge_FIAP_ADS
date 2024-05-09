@@ -5,25 +5,25 @@
 }
 
 :root {
-    --colorPrimary: #004357;
-    --pinkLight: rgba(234, 49, 159, 0.57);
-    --pinkDark: rgba(236, 0, 140, 0.57);
-    --blueSecondary: #3BC7F4;
-    --backgroundLight: #f4f4f4;
-    --feedbackError: rgba(219, 69, 69, 0.9);
-    --errorDark: #B63939;
-    --errorWarning: #DB4545;
-    --grayFeedback: #808080;
-    --grayDefault: #4E4E4E;
-    --green: #A4CE46;
-    --greenDark: #597f07;
-    --warning: #E5A801;
-    --white: #ffff;
-    --black: #00000;
-    --bordergray: #CDCDCF;
-    --bs-nav-link-color: #004357 !important;
-    --bs-nav-link-hover-color: #004357 !important;
-    --bs-nav-link-disabled-color: var(--grayFeedback) !important;
+  --colorPrimary: #004357;
+  --pinkLight: rgba(234, 49, 159, 0.57);
+  --pinkDark: rgba(236, 0, 140, 0.57);
+  --blueSecondary: #3bc7f4;
+  --backgroundLight: #f4f4f4;
+  --feedbackError: rgba(219, 69, 69, 0.9);
+  --errorDark: #b63939;
+  --errorWarning: #db4545;
+  --grayFeedback: #808080;
+  --grayDefault: #4e4e4e;
+  --green: #a4ce46;
+  --greenDark: #597f07;
+  --warning: #e5a801;
+  --white: #ffff;
+  --black: #00000;
+  --bordergray: #cdcdcf;
+  --bs-nav-link-color: #004357 !important;
+  --bs-nav-link-hover-color: #004357 !important;
+  --bs-nav-link-disabled-color: var(--grayFeedback) !important;
 }
 
 body {
@@ -189,11 +189,10 @@ header {
 }
 
 .sucess-toast {
-    background-color: var(--greenDark);
-    color: var(--white);
-    font-weight: 500;
+  background-color: var(--greenDark);
+  color: var(--white);
+  font-weight: 500;
 }
-
 
 span {
   font-size: 12px;
@@ -253,10 +252,8 @@ button a {
 }
 
 .infravermelho {
-    filter: brightness(40%) contrast(130%) hue-rotate(-100deg) saturate(100%);
+  filter: brightness(40%) contrast(130%) hue-rotate(-100deg) saturate(100%);
 }
-
-
 
 /* GRID */
 
@@ -663,30 +660,38 @@ button a {
 }
 
 @media (max-width: 1100.98px) {
-    .col-span-6 {
-        grid-column: span 12 / span 12;
-    }
-   
+  .col-span-6 {
+    grid-column: span 12 / span 12;
+  }
+  .wallpaper {
+    display: none;
+  }
 }
 
 @media (max-width: 1100.98px) {
-    .col-span-3 {
-        grid-column: span 6 / span 6;
-    }
+  .col-span-3 {
+    grid-column: span 6 / span 6;
+  }
 
-    .col-span-4 {
-        grid-column: span 6 / span 6;
-    }
+  .col-span-4 {
+    grid-column: span 6 / span 6;
+  }
+  .wallpaper {
+    display: none;
+  }
 }
 
 @media (max-width: 657.98px) {
-    .col-span-3 {
-        grid-column: span 12 / span 12;
-    }
+  .col-span-3 {
+    grid-column: span 12 / span 12;
+  }
 
-    .col-span-4 {
-        grid-column: span 12 / span 12;
-    }
+  .col-span-4 {
+    grid-column: span 12 / span 12;
+  }
+  .wallpaper {
+    display: none;
+  }
 }
 
 /* Card Clima */
