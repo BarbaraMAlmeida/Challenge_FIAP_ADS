@@ -87,8 +87,8 @@ function formControlRegisterCall() {
                 setTimeout(() => {
                     toastBootstrap.hide()
                     modalInstance.hide();
-                }, 3000);
-            }, 3000);
+                }, 1000);
+            }, 1000);
         }
     }
     else {

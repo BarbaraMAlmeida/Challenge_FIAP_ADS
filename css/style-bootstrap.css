@@ -24,6 +24,13 @@
   --bs-nav-link-disabled-color: var(--grayFeedback) !important;
 }
 
+.container {
+  margin-top: 24px !important;
+  min-height: 80vh !important;
+  max-height: 90vh !important;
+}
+
+
 /* Botões  */
 
 .btn-primary {
@@ -163,7 +170,7 @@ select:active {
   border: 1px solid var(--bordergray);
   border-radius: 8px;
   color: var(--grayDefault);
-  background-color: var(--bordergray);
+  background-color: transparent;
 }
 
 .form-control:active {
@@ -418,4 +425,18 @@ textarea.form-control {
   white-space: nowrap;
   background-color: transparent;
   transition: none;
+}
+
+
+/* Nav */
+
+a.nav-link.active {
+  color: var(--colorPrimary);  
+  text-decoration: underline;
+}
+
+
+
+.carousel-item img {
+  height: 100%;
 }

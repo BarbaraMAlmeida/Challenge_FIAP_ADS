@@ -22,17 +22,16 @@ window.addEventListener('load', () => {
 })
 
 function getWeatherLocaleToll() {
-    if(getPermissionProfile() === 'ADMIN') {
-        let selectToll = document.getElementById('admin_selection').value;
-        
-        let resultTownState = getTownState(selectToll);
-        let resultTown = getTown(selectToll);
+    let selectToll = document.getElementById('admin_selection').value;
+    
+    let resultTownState = getTownState(selectToll);
+    let resultTown = getTown(selectToll);
 
-        let localeCardWeather = document.getElementById('localeWeather');
-        localeCardWeather.innerHTML = resultTownState;
+    let localeCardWeather = document.getElementById('localeWeather');
+    localeCardWeather.innerHTML = resultTownState;
 
-        getLatAndLon(resultTown);
-    }
+    getLatAndLon(resultTown);
+
 }
 
 function getTownState(endereco) {

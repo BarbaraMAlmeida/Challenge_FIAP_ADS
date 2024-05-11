@@ -21,6 +21,7 @@
   --white: #ffff;
   --black: #00000;
   --bordergray: #cdcdcf;
+  --bordergrayLight: #eaeaeaad;
   --bs-nav-link-color: #004357 !important;
   --bs-nav-link-hover-color: #004357 !important;
   --bs-nav-link-disabled-color: var(--grayFeedback) !important;
@@ -94,6 +95,11 @@ input {
 label {
   color: var(--grayDefault);
   font-weight: 400;
+}
+
+.text-modal-details {
+  min-width: 200px; 
+  max-width: 400px;
 }
 
 div.walppaper {
@@ -235,12 +241,25 @@ span {
   font-size: 14px;
 }
 
+#modalPendente, #modalVencido {
+  p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+#map {
+  height: 100%;
+}
+
+.container-map {
+  background-color: var(--white);
+  border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));;
+}
+
+
 .card-dashboard-item {
-  background: linear-gradient(
-    to bottom right,
-    rgba(217, 217, 217, 0.405),
-    rgba(217, 217, 217, 0.011)
-  );
+  background: var(--bordergrayLight);
   padding: 8px 16px;
   border-radius: 8px;
   box-shadow: 4px 4px 10 rgba(0, 0, 0, 0.1);
@@ -254,6 +273,7 @@ button a {
 .infravermelho {
   filter: brightness(40%) contrast(130%) hue-rotate(-100deg) saturate(100%);
 }
+
 
 /* GRID */
 
@@ -659,6 +679,15 @@ button a {
   grid-row-end: auto;
 }
 
+.login-informations {
+  width: 50%;
+}
+
+.img-login img {
+  object-fit: contain;
+  max-height: 90vh;
+}
+
 @media (max-width: 1100.98px) {
   .col-span-6 {
     grid-column: span 12 / span 12;
@@ -666,9 +695,6 @@ button a {
   .wallpaper {
     display: none;
   }
-}
-
-@media (max-width: 1100.98px) {
   .col-span-3 {
     grid-column: span 6 / span 6;
   }
@@ -676,8 +702,16 @@ button a {
   .col-span-4 {
     grid-column: span 6 / span 6;
   }
-  .wallpaper {
+  
+}
+
+@media (max-width: 999.00px) {
+   .img-login {
     display: none;
+  }
+
+  .login-informations {
+    width: 100%;
   }
 }
 
@@ -689,10 +723,8 @@ button a {
   .col-span-4 {
     grid-column: span 12 / span 12;
   }
-  .wallpaper {
-    display: none;
-  }
 }
+
 
 /* Card Clima */
 
@@ -700,7 +732,7 @@ button a {
 
 .card-clima {
   border-radius: 25px;
-  margin: 1px;
+  margin: 2px;
 }
 
 #sol {

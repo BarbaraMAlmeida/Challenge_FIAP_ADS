@@ -29,7 +29,12 @@
     <link rel="stylesheet" href="./css/style.css"> 
     <link rel="stylesheet" href="./css/style-bootstrap.css">
     <link rel="icon" href="https://www.tecsidel.com/wp-content/uploads/2022/12/cropped-isologo-32x32.png" sizes="32x32">
-</head>
+
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkBg2N2CQgZ48eHNvJFcRAtdSiXFG0b1k&callback=initMap&libraries=places&v=weekly"
+    defer
+  ></script>
+  </head>
 
 <body>
     <header class="d-flex justify-content-between align-items-center flex-wrap">
@@ -44,6 +49,7 @@
               <i class="fa-solid fa-chevron-down"></i>
             </span>
             <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="central.html">Tela Principal</a></li>
               <li id="registerUserAdmin"><a class="dropdown-item" href="cadastro-usuario.html">Cadastrar usuários</a></li>
               <li id="controlCamAdmin"><a class="dropdown-item" href="cameras.html">Ver câmeras</a></li>
               <li id="logout"><a class="dropdown-item" href="index.html">Logout</a></li>
@@ -84,7 +90,7 @@
                                 <div class="card-body">
                                     <div class="grid grid-cols-12 gap-2">
                                       <div class="card-dashboard-item col-span-6">
-                                        <h5 class="title-card">Sensor - CDF22</h5>
+                                        <h5 class="title-card">Sensor - SEN22</h5>
                                         <div>
                                           <span>Taxa de leitura</span>
                                           <div class="progress">
@@ -103,7 +109,7 @@
                                         </div>
                                       </div>
                                       <div class="card-dashboard-item col-span-6">
-                                         <h5 class="title-card">Sensor - CDF22</h5>
+                                         <h5 class="title-card">Sensor - SEN23</h5>
                                          <div>
                                           <span>Taxa de leitura</span>
                                           <div class="progress">
@@ -135,7 +141,7 @@
                                 <div class="card-body">
                                     <div class="grid grid-cols-12 gap-2">
                                      <div class="card-dashboard-item col-span-6">
-                                         <h5 class="title-card">Sensor - CDF22</h5>
+                                         <h5 class="title-card">Sensor - CMAN22</h5>
                                          <div>
                                           <span>Taxa de leitura</span>
                                           <div class="progress">
@@ -154,7 +160,7 @@
                                       </div>
  
                                       <div class="card-dashboard-item col-span-6">
-                                         <h5 class="title-card">Sensor - CDF22</h5>
+                                         <h5 class="title-card">Sensor - CMAN23</h5>
                                          <div>
                                           <span>Taxa de leitura</span>
                                           <div class="progress">
@@ -185,7 +191,7 @@
                                 <div class="card-body">
                                     <div class="grid grid-cols-12 gap-2">
                                      <div class="card-dashboard-item col-span-3">
-                                         <h5 class="title-card">Sensor - CDF22</h5>
+                                         <h5 class="title-card">Sensor - CMEP22</h5>
                                          <div>
                                           <span>Taxa de leitura</span>
                                           <div class="progress">
@@ -204,7 +210,7 @@
                                       </div>
 
                                       <div class="card-dashboard-item col-span-3">
-                                        <h5 class="title-card">Sensor - CDF22</h5>
+                                        <h5 class="title-card">Sensor - CMEP23</h5>
                                         <div>
                                          <span>Taxa de leitura</span>
                                          <div class="progress">
@@ -221,7 +227,7 @@
                                      </div>
 
                                       <div class="card-dashboard-item col-span-3">
-                                        <h5 class="title-card">Sensor - CDF22</h5>
+                                        <h5 class="title-card">Sensor - CMEP24</h5>
                                         <div>
                                          <span>Taxa de leitura</span>
                                          <div class="progress">
@@ -240,7 +246,7 @@
                                      </div>
  
                                       <div class="card-dashboard-item col-span-3">
-                                         <h5 class="title-card">Sensor - CDF22</h5>
+                                         <h5 class="title-card">Sensor - CMEP25</h5>
                                          <div>
                                           <span>Taxa de leitura</span>
                                           <div class="progress">
@@ -268,7 +274,7 @@
                               <div class="card-body">
                                   <div class="grid grid-cols-12 gap-2">
                                    <div class="card-dashboard-item col-span-3">
-                                       <h5 class="title-card">Sensor - CDF22</h5>
+                                       <h5 class="title-card">Sensor - CMAX22</h5>
                                        <div>
                                         <span>Taxa de leitura</span>
                                         <div class="progress">
@@ -285,7 +291,7 @@
                                     </div>
 
                                     <div class="card-dashboard-item col-span-3">
-                                      <h5 class="title-card">Sensor - CDF22</h5>
+                                      <h5 class="title-card">Sensor - CMAX23</h5>
                                       <div>
                                        <span>Taxa de leitura</span>
                                        <div class="progress">
@@ -302,7 +308,7 @@
                                    </div>
 
                                     <div class="card-dashboard-item col-span-3">
-                                      <h5 class="title-card">Sensor - CDF22</h5>
+                                      <h5 class="title-card">Sensor - CMAX24</h5>
                                       <div>
                                        <span>Taxa de leitura</span>
                                        <div class="progress">
@@ -319,7 +325,7 @@
                                    </div>
 
                                     <div class="card-dashboard-item col-span-3">
-                                       <h5 class="title-card">Sensor - CDF22</h5>
+                                       <h5 class="title-card">Sensor - CMAX25</h5>
                                        <div>
                                         <span>Taxa de leitura</span>
                                         <div class="progress">
@@ -400,12 +406,8 @@
                         
                       </div>
                 </div>
-                <div class="col-span-6  mt-3">
-                  <iframe id="mapa" width="100%" 
-                  height="100%" style="border:0; border-radius: 8px;" 
-                  loading="lazy" allowfullscreen 
-                  referrerpolicy="no-referrer-when-downgrade">
-                  </iframe>
+                <div class="col-span-6 mt-3 p-2 container-map">
+                  <div id="map"></div>
                 </div>
             </div>
         </section>
@@ -465,13 +467,6 @@
                           <i class="fa-solid fa-car"></i>
                           <span class="ms-2">Estevão Araújo Boaventura</span>
                         </h5>
-                        <div class="dropdown">
-                          <i class="dropdown-toggle
-                          fa-solid fa-ellipsis" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false"></i>
-                          <ul class="dropdown-menu" ariSa-labelledby="dropdownMenu2">
-                            <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver detalhes</button></li>
-                          </ul>
-                      </div>
                       </div>
                         
                         <div class="mt-2 d-flex align-items-center justify-content-between flex-wrap">
@@ -492,23 +487,23 @@
                       <div class="d-flex justify-content-between align-items-center">
                         <h5 class="title-card-payments d-flex align-items-center">
                           <i class="fa-solid fa-car"></i>
-                          <span class="ms-2">Estevão Araújo Boaventura</span>
+                          <span class="ms-2">Giovanni de Souza Oliveira</span>
                         </h5>
                         <div class="dropdown">
                           <i class="dropdown-toggle
                           fa-solid fa-ellipsis" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false"></i>
                           <ul class="dropdown-menu" ariSa-labelledby="dropdownMenu2">
-                            <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver detalhes</button></li>
+                            <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modalVencido">Ver detalhes</button></li>
                           </ul>
                       </div>
                       </div>
                       <div class="mt-2 d-flex align-items-center justify-content-between flex-wrap">
-                      <div><span class="information">Placa:</span> <span class="value">NDX-7040</span></div>
-                      <div><span class="information">Modelo:</span> <span class="value">Toyota Corolla</span></div>
+                      <div><span class="information">Placa:</span> <span class="value">PWX-7040</span></div>
+                      <div><span class="information">Modelo:</span> <span class="value">Honda City</span></div>
                       </div> 
                       <div>
-                        <div class="mt-2"><span class="information">Hora da passagem:</span> <span class="value">30/03/2024 15:20 </span></div>
-                        <div class="mt-2"><span class="information">Hora do débito:</span> <span class="value">30/03/2024 15:22 </span></div>
+                        <div class="mt-2"><span class="information">Hora da passagem:</span> <span class="value">31/03/2024 15:20 </span></div>
+                        <div class="mt-2"><span class="information">Hora do débito:</span> <span class="value">31/03/2024 15:22 </span></div>
                       </div>
                       
                       <div class="w-100 d-flex justify-content-end align-items-center">
@@ -516,22 +511,22 @@
                       </div>
                     </div>
 
-                     <div class="card-dashboard-item col-span-4">
+                    <div class="card-dashboard-item col-span-4">
                       <div class="d-flex justify-content-between align-items-center">
                         <h5 class="title-card-payments d-flex align-items-center">
                           <i class="fa-solid fa-car"></i>
-                          <span class="ms-2">Estevão Araújo Boaventura</span>
+                          <span class="ms-2">Jaqueline Silva</span>
                         </h5>
                         <div class="dropdown">
                           <i class="dropdown-toggle
                           fa-solid fa-ellipsis" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false"></i>
                           <ul class="dropdown-menu" ariSa-labelledby="dropdownMenu2">
-                            <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver detalhes</button></li>
+                            <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modalPendente">Ver detalhes</button></li>
                           </ul>
                       </div>
                       </div>
                       <div class="mt-2 d-flex align-items-center justify-content-between flex-wrap">
-                      <div><span class="information">Placa:</span> <span class="value">NDX-7040</span></div>
+                      <div><span class="information">Placa:</span> <span class="value">NDX-2345</span></div>
                       <div><span  class="information">Modelo:</span> <span class="value">Toyota Corolla</span></div>
                       </div> 
                       <div>
@@ -548,18 +543,11 @@
                       <div class="d-flex justify-content-between align-items-center">
                         <h5 class="title-card-payments d-flex align-items-center">
                           <i class="fa-solid fa-car"></i>
-                          <span class="ms-2">Estevão Araújo Boaventura</span>
+                          <span class="ms-2">Bárbara Nicolle M de Almeida</span>
                         </h5>
-                        <div class="dropdown">
-                          <i class="dropdown-toggle
-                          fa-solid fa-ellipsis" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false"></i>
-                          <ul class="dropdown-menu" ariSa-labelledby="dropdownMenu2">
-                            <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver detalhes</button></li>
-                          </ul>
-                      </div>
                       </div>
                     <div class="mt-2 d-flex align-items-center justify-content-between flex-wrap">
-                    <div><span class="information">Placa:</span> <span class="value">NDX-7040</span></div>
+                    <div><span class="information">Placa:</span> <span class="value">BNS-1280</span></div>
                     <div><span  class="information">Modelo:</span> <span class="value">Toyota Corolla</span></div>
                     </div> 
                     <div>
@@ -576,18 +564,11 @@
                       <div class="d-flex justify-content-between align-items-center">
                         <h5 class="title-card-payments d-flex align-items-center">
                           <i class="fa-solid fa-car"></i>
-                          <span class="ms-2">Estevão Araújo Boaventura</span>
+                          <span class="ms-2">João Lucas Boaventura</span>
                         </h5>
-                        <div class="dropdown">
-                          <i class="dropdown-toggle
-                          fa-solid fa-ellipsis" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false"></i>
-                          <ul class="dropdown-menu" ariSa-labelledby="dropdownMenu2">
-                            <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver detalhes</button></li>
-                          </ul>
-                      </div>
                       </div>
                       <div class="mt-2 d-flex align-items-center justify-content-between flex-wrap">
-                      <div><span class="information">Placa:</span> <span class="value">NDX-7040</span></div>
+                      <div><span class="information">Placa:</span> <span class="value">NMZ-7040</span></div>
                       <div><span  class="information">Modelo:</span> <span class="value">Toyota Corolla</span></div>
                       </div> 
                       <div>
@@ -604,19 +585,12 @@
                         <div class="d-flex justify-content-between align-items-center">
                           <h5 class="title-card-payments d-flex align-items-center">
                             <i class="fa-solid fa-car"></i>
-                            <span class="ms-2">Estevão Araújo Boaventura</span>
+                            <span class="ms-2">Gabriel Jesus</span>
                           </h5>
-                          <div class="dropdown">
-                            <i class="dropdown-toggle
-                            fa-solid fa-ellipsis" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false"></i>
-                            <ul class="dropdown-menu" ariSa-labelledby="dropdownMenu2">
-                              <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver detalhes</button></li>
-                            </ul>
-                        </div>
                         </div>
                         <div class="mt-2 d-flex align-items-center justify-content-between flex-wrap">
-                        <div><span class="information">Placa:</span> <span class="value">NDX-7040</span></div>
-                        <div><span  class="information">Modelo:</span> <span class="value">Toyota Corolla</span></div>
+                        <div><span class="information">Placa:</span> <span class="value">NMX-7040</span></div>
+                        <div><span  class="information">Modelo:</span> <span class="value">Ford Ka</span></div>
                         </div> 
                         <div>
                           <div class="mt-2"><span class="information">Hora da passagem:</span> <span class="value">30/03/2024 15:20 </span></div>
@@ -665,9 +639,6 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-
-          <!-- PREVISAO DO TEMPO AQUI -->
-
           <div class="card-group">
 
             <div class="card-clima" id="chuva">
@@ -764,7 +735,7 @@
               <div class="card-footer">
               </div>
             </div>
-            <!-- FIM TEMPO PREVISÃO -->
+            </div>
           </div>
         </div>
       </div>
@@ -792,7 +763,6 @@
                         <option selected></option>
                         <option value="1">Sensor RFID</option>
                         <option value="2">Câmeras ANPR</option>
-                        <option value="3">Iluminação Infravermelha</option>
                         <option value="4">Câmeras Estereoscópicas</option>
                         <option value="4">Câmeras Auxiliares</option>
                     </select>
@@ -812,10 +782,8 @@
                   <label for="exampleFormControlInput1" class="form-label">Pórtico</label>
                   <select id="toll" class="form-select" aria-label="Default select example">
                       <option selected></option>
-                      <option value="1">PORTICO 01</option>
-                      <option value="2">PORTICO 02</option>
-                      <option value="3">PORTICO 03</option>
-                      <option value="3">PORTICO 04</option>
+                      <option value="1">Rodovia Fernão Dias, Km 588, Itatiaiuçu - MG</option>
+                      <option value="2">Rodovia dos Bandeirantes, Km 58, Jundiaí - SP</option>
                   </select>
               </div>
 
@@ -859,6 +827,111 @@
         </div>
       </div>
 
+
+
+
+      <div class="modal modal-lg fade" id="modalPendente" tabindex="-1" aria-labelledby="modalPendenteLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="title-modal">
+                <h6>Relatório de pagamento</h6>
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex justify-content-between align-items-center flex-wrap">
+              <div class="text-modal-details">
+                <h2>Atenção!</h2>
+                <p>O pagamento está <span class="warning-tag">Pendente</span></p>
+
+                <p>
+                  No dia 30/03/2024 o saldo do cliente no aplicativo era de R$ 2.50. 
+                  Sendo insuficiente para realizar o débito, foi gerado um boleto para o pagamento.
+                </p>
+
+                <p>Avise ao cliente que o boleto pode ser encontrado pelo aplicativo e que 
+                  a data de vencimento é no dia 20/08/2024.</p>
+              </div>
+
+              <div>
+                <div class="card-dashboard-item h-100">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="title-card-payments d-flex align-items-center">
+                      <i class="fa-solid fa-car"></i>
+                      <span class="ms-2">Jaqueline Silva</span>
+                    </h5>
+                   
+                  </div>
+                  
+                  <div class="mt-2"><span class="information">Placa:</span> <span class="value">NDX-2345</span></div>
+                  <div class="mt-2"><span  class="information">Modelo:</span> <span class="value">Toyota Corolla</span></div>
+                  <div class="mt-2"><span class="information">Hora da passagem:</span> <span class="value">30/03/2024 15:20 </span></div>
+                  <div class="mt-2"><span class="information">Hora do débito:</span> <span class="value">30/03/2024 15:22 </span></div>
+                 
+                  
+                  <div class="w-100 d-flex justify-content-end align-items-center">
+                    <span class="warning-tag">Boleto pendente</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal modal-lg fade" id="modalVencido" tabindex="-1" aria-labelledby="modalVencidoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="title-modal">
+                <h6>Relatório de pagamento</h6>
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex justify-content-between align-items-center flex-wrap">
+              <div class="text-modal-details">
+                <h2>Atenção!</h2>
+                <p>O pagamento está <span class="danger-tag">Vencido</span></p>
+
+                <p>
+                  No dia 30/03/2024 o saldo do cliente no aplicativo era de R$ 2.50. 
+                  Sendo insuficiente para realizar o débito, foi gerado um boleto para o pagamento e seu vencimento
+                  expirou no dia 05/04/2024.
+                </p>
+
+                <p>Avise ao cliente que o boleto pode ser encontrado pelo aplicativo e que 
+                  a data de vencimento expirou. Ele ainda poderá pagar mas receberá uma multa.</p>
+              </div>
+
+              <div>
+                <div class="card-dashboard-item h-100">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="title-card-payments d-flex align-items-center">
+                      <i class="fa-solid fa-car"></i>
+                      <span class="ms-2">Giovanni de Souza Oliveira
+                      </span>
+                    </h5>
+                   
+                  </div>
+                  
+                  <div class="mt-2"><span class="information">Placa:</span> <span class="value">PWX-7040</span></div>
+                  <div class="mt-2"><span  class="information">Modelo:</span> <span class="value">Honda City</span></div>
+                  <div class="mt-2"><span class="information">Hora da passagem:</span> <span class="value">31/03/2024 15:20 </span></div>
+                  <div class="mt-2"><span class="information">Hora do débito:</span> <span class="value">31/03/2024 15:22 </span></div>
+                 
+                  
+                  <div class="w-100 d-flex justify-content-end align-items-center">
+                    <span class="danger-tag">Vencido</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
       <div class="toast-container position-fixed bottom-0 end-0 p-3">
         <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header sucess-toast">
@@ -876,10 +949,13 @@
 
     </div>
 
+  
     <script src="./scripts/permission.js"></script>
     <script src="./scripts/header.js"></script>
     <script src="./scripts/weather-locale.js"></script>
     <script src="./scripts/control-cards-cam.js"></script>
+    <script src="./scripts/infravermelho-cam.js"></script>
+    <script src="./scripts/maps.js"></script>
 </body>
 
 </html>
