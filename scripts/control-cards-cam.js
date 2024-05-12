@@ -4,7 +4,6 @@ window.onload = () => {
     let dashboard = document.getElementById('dashboard');
 
     setTimeout(() => {
-        spinnerDashboard.classList.add('visually-hidden');
         dashboard.classList.remove('visually-hidden');
         getValueCards();
         addGradientCardFailed();
@@ -16,8 +15,10 @@ window.onload = () => {
         document.getElementById('cancelCall').addEventListener('click', () => {
             clearCallFormValues();
         });
+
+        spinnerDashboard.classList.add('visually-hidden');
     
-    }, 500);
+    }, 100);
    
 }
 

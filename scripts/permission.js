@@ -68,11 +68,6 @@ function controlPermission() {
     }
 }
 
-function createPermission() {
-    let profile = document.cookie = 'profile=ADMIN';
-    return profile;
-}
-
 function logout() {
     document.cookie = 'profile=';
     window.location.pathname = '/index.html';

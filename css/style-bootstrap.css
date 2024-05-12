@@ -229,7 +229,7 @@ textarea.form-control {
 
 /* Nav e Tabs */
 
-.nav-link {
+.nav-link .active {
   display: block;
   padding: 16px 16px 16px 0px;
   font-size: var(--bs-nav-link-font-size);
@@ -240,6 +240,54 @@ textarea.form-control {
   border: 0;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out;
+}
+
+.nav-link {
+  display: block;
+  padding: 16px 16px 16px 0px;
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: 600;
+  color: var(--grayFeedback);
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.nav-link:hover {
+  display: block;
+  padding: 16px 16px 16px 0px;
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: 600;
+  color: var(--grayFeedback);
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.nav-link:focus {
+  display: block;
+  padding: 16px 16px 16px 0px;
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: 600;
+  color: var(--grayFeedback);
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.nav-link:active {
+  display: block;
+  padding: 16px 16px 16px 0px;
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: 600;
+  color: var(--grayFeedback);
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 
 .nav-link a::after {
