@@ -30,7 +30,6 @@
   max-height: 90vh !important;
 }
 
-
 /* Botões  */
 
 .btn-primary {
@@ -227,6 +226,10 @@ textarea.form-control {
   margin-bottom: 10px;
 }
 
+#perfil_selection {
+  margin-bottom: 25px;
+}
+
 /* Nav e Tabs */
 
 .nav-link .active {
@@ -251,7 +254,8 @@ textarea.form-control {
   text-decoration: none;
   background: 0 0;
   border: 0;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
 }
 
 .nav-link:hover {
@@ -263,7 +267,8 @@ textarea.form-control {
   text-decoration: none;
   background: 0 0;
   border: 0;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
 }
 
 .nav-link:focus {
@@ -275,7 +280,8 @@ textarea.form-control {
   text-decoration: none;
   background: 0 0;
   border: 0;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
 }
 
 .nav-link:active {
@@ -287,7 +293,8 @@ textarea.form-control {
   text-decoration: none;
   background: 0 0;
   border: 0;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
 }
 
 .nav-link a::after {
@@ -475,15 +482,12 @@ textarea.form-control {
   transition: none;
 }
 
-
 /* Nav */
 
 a.nav-link.active {
-  color: var(--colorPrimary);  
+  color: var(--colorPrimary);
   text-decoration: underline;
 }
-
-
 
 .carousel-item img {
   height: 100%;
