@@ -3,48 +3,48 @@ let listPayments = [
         driver: "Estevão Araújo Boaventura",
         board: "NDX-7040",
         modelCar: "Toyota Corolla",
-        ticketTime: "03/30/2024 15:20",
-        debitTime: "03/30/2024 15:22",
+        ticketTime: "30/03/2024 15:20",
+        debitTime: "30/03/2024 15:22",
         status: "Pago"
     },
     {
         driver: "Bárbara Nicolle M de Almeida",
         board: "BNS-1280",
         modelCar: "Toyota Corolla",
-        ticketTime: "03/30/2024 15:20",
-        debitTime: "03/30/2024 15:22",
+        ticketTime: "30/03/2024 15:20",
+        debitTime: "30/03/2024 15:22",
         status: "Vencido"
     },
     {
         driver: "Giovanni de Souza Oliveira",
         board: "PWX-7040",
         modelCar: "Honda City",
-        ticketTime: "03/31/2024 15:20",
-        debitTime: "03/31/2024 15:22",
+        ticketTime: "31/03/2024 15:20",
+        debitTime: "31/03/2024 15:22",
         status: "Boleto pendente"
     },
     {
         driver: "João Lucas Boaventura",
         board: "NMZ-7040",
         modelCar: "Toyota Corolla",
-        ticketTime: "03/30/2024 15:20",
-        debitTime: "03/30/2024 15:22",
+        ticketTime: "30/03/2024 15:20",
+        debitTime: "30/03/2024 15:22",
         status: "Em processamento"
     },
     {
         driver: "Jaqueline Silva",
         board: "NDX-2345",
         modelCar: "Toyota Corolla",
-        ticketTime: "03/30/2024 15:20",
-        debitTime: "03/30/2024 15:22",
+        ticketTime: "30/03/2024 15:20",
+        debitTime: "30/03/2024 15:22",
         status: "Em processamento"
     },
     {
         driver: "Gabriel Jesus",
         board: "NMX-7040",
         modelCar: "Ford Ka",
-        ticketTime: "03/30/2024 15:20",
-        debitTime: "03/30/2024 15:22",
+        ticketTime: "30/03/2024 15:20",
+        debitTime: "30/03/2024 15:22",
         status: "Em processamento"
     }
 ];
