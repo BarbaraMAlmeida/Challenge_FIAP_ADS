@@ -1,20 +1,7 @@
-let links;
 let permission;
 
 window.addEventListener('load', () => {
     document.cookie = 'profile=';
-    links = document.querySelectorAll('.nav-link');
-
-    links.forEach(link => {
-        link.addEventListener('click', function() {
-
-            links.forEach(l => {
-                l.classList.remove('active');
-            });
-
-            this.classList.add('active');
-        });
-    });
 
     document.getElementById('login').addEventListener('click', () => {
         formControlLogin();
@@ -23,11 +10,7 @@ window.addEventListener('load', () => {
 
 function formControlLogin() {
     if(validForm()) {
-        links.forEach(link => {
-            if(link.classList.contains('active')) {
-                permission = link.innerHTML;
-            }
-        })
+        permission = document.getElementById('perfil_selection').value;
         createPermission(permission);
     }
     else {
@@ -37,10 +20,11 @@ function formControlLogin() {
 }
 
 function validForm() {
+    const permissionSelect = document.getElementById('perfil_selection').value.trim();
     const email = document.getElementById('email').value.trim();
     const password = document.getElementById('password').value.trim();
 
-    if (!email || !password) {
+    if (!email || !password || !permissionSelect ) {
         return false;
     } else {
         return true;

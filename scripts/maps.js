@@ -10,34 +10,25 @@ window.addEventListener('load', () => {
     initMap();
    
     document.getElementById('admin_selection').addEventListener('change', () => {
-        console.log("change")
-
         verifyToll()
         initMap();
-
-        console.log(paramlat, paramlgn);
-
     });
 
 });
 
 function verifyToll() {
     selectToll = document.getElementById('admin_selection').value;
-    console.log("novo valor", selectToll)
 
     if(selectToll.indexOf("Fernão") !== -1) {
-        console.log("aaa")
         paramlat = -20.230886967979405;
         paramlgn = -44.39787984140217;
     } else {
-        console.log("bbb")
         paramlat = -23.15064918144046;
         paramlgn = -46.96079732002399;
     }
 }
 
 function initMap() {
-    console.log(paramlat, paramlgn);
   const locale = new google.maps.LatLng(paramlat, paramlgn);
 
   infowindow = new google.maps.InfoWindow();
@@ -45,8 +36,6 @@ function initMap() {
     center: locale,
     zoom: 15,
   });
-
-  console.log(selectToll)
 
   const request = {
     query: `${selectToll}`,

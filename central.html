@@ -402,8 +402,6 @@
                           
                         </div>
                         </div>
-
-                        
                       </div>
                 </div>
                 <div class="col-span-6 mt-3 p-2 container-map">
@@ -421,34 +419,34 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-4 mt-3">
-                            <label for="exampleFormControlInput1" class="form-label">Motorista</label>
-                            <select class="form-select" aria-label="Default select example">
+                            <label for="filterDriver" class="form-label">Motorista</label>
+                            <select id="filterDriver" class="form-select" aria-label="Default select example">
                                 <option selected></option>
-                                <option value="1">José Fernando Silva</option>
-                                <option value="2">Julio Nascimento de Oliveira</option>
-                                <option value="3">Estevão Araújo Boaventura</option>
-                                <option value="3">Giovanni Aguiar dos Santos</option>
+                                <option value="José Fernando Silva">José Fernando Silva</option>
+                                <option value="Julio Nascimento de Oliveira">Julio Nascimento de Oliveira</option>
+                                <option value="Estevão Araújo Boaventura">Estevão Araújo Boaventura</option>
+                                <option value="Giovanni Aguiar dos Santos">Giovanni Aguiar dos Santos</option>
                             </select>
                         </div>
                         <div class="col-md-4 mt-3">
-                            <label for="exampleFormControlInput1" class="form-label">Placa do carro</label>
-                            <select class="form-select" aria-label="Default select example">
+                            <label for="filterPlate" class="form-label">Placa do carro</label>
+                            <select id="filterPlate" class="form-select" aria-label="Default select example">
                                 <option selected></option>
-                                <option value="1">HPA-1242</option>
-                                <option value="2">NEU-7344</option>
-                                <option value="3">HPB-4080</option>
-                                <option value="4">MVJ-8249</option>
+                                <option value="HPA-1242">HPA-1242</option>
+                                <option value="BNS-1280">BNS-1280</option>
+                                <option value="HPB-4080">HPB-4080</option>
+                                <option value="MVJ-8249">MVJ-8249</option>
                             </select>
                         </div>
                         <div class="col-md-4 mt-3">
-                            <label for="exampleFormControlInput1" class="form-label">Status do pagamento</label>
-                            <select class="form-select" aria-label="Default select example">
+                            <label for="filterStatus" class="form-label">Status do pagamento</label>
+                            <select id="filterStatus" class="form-select" aria-label="Default select example">
                                 <option selected></option>
-                                <option value="1">Concluído</option>
-                                <option value="2">Negado</option>
-                                <option value="3">Vencido</option>
-                                <option value="3">Em processamento</option>
-                                <option value="3">Boleto pendente</option>
+                                <option value="Pago">Pago</option>
+                                <option value="Negado">Negado</option>
+                                <option value="Vencido">Vencido</option>
+                                <option value="Em processamento">Em processamento</option>
+                                <option value="Boleto pendente">Boleto pendente</option>
                             </select>
                         </div>
                     </div>
@@ -460,148 +458,8 @@
                     Pagamentos em tempo real
                 </div>
                 <div class="card-body">
-                  <div class="grid grid-cols-12 gap-2">
-                    <div class="card-dashboard-item col-span-4">
-                      <div class="d-flex justify-content-between align-items-center">
-                        <h5 class="title-card-payments d-flex align-items-center">
-                          <i class="fa-solid fa-car"></i>
-                          <span class="ms-2">Estevão Araújo Boaventura</span>
-                        </h5>
-                      </div>
-                        
-                        <div class="mt-2 d-flex align-items-center justify-content-between flex-wrap">
-                        <div><span class="information">Placa:</span> <span class="value">NDX-7040</span></div>
-                        <div><span  class="information">Modelo:</span> <span class="value">Toyota Corolla</span></div>
-                        </div> 
-                        <div>
-                          <div class="mt-2"><span class="information">Hora da passagem:</span> <span class="value">30/03/2024 15:20 </span></div>
-                          <div class="mt-2"><span class="information">Hora do débito:</span> <span class="value">30/03/2024 15:22 </span></div>
-                        </div>
-                        
-                        <div class="w-100 d-flex justify-content-end align-items-center">
-                          <span class="success-tag">Pago</span>
-                        </div>
-                     </div>
+                  <div class="all-cards grid grid-cols-12 gap-2">
 
-                     <div class="card-dashboard-item col-span-4">
-                      <div class="d-flex justify-content-between align-items-center">
-                        <h5 class="title-card-payments d-flex align-items-center">
-                          <i class="fa-solid fa-car"></i>
-                          <span class="ms-2">Giovanni de Souza Oliveira</span>
-                        </h5>
-                        <div class="dropdown">
-                          <i class="dropdown-toggle
-                          fa-solid fa-ellipsis" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false"></i>
-                          <ul class="dropdown-menu" ariSa-labelledby="dropdownMenu2">
-                            <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modalVencido">Ver detalhes</button></li>
-                          </ul>
-                      </div>
-                      </div>
-                      <div class="mt-2 d-flex align-items-center justify-content-between flex-wrap">
-                      <div><span class="information">Placa:</span> <span class="value">PWX-7040</span></div>
-                      <div><span class="information">Modelo:</span> <span class="value">Honda City</span></div>
-                      </div> 
-                      <div>
-                        <div class="mt-2"><span class="information">Hora da passagem:</span> <span class="value">31/03/2024 15:20 </span></div>
-                        <div class="mt-2"><span class="information">Hora do débito:</span> <span class="value">31/03/2024 15:22 </span></div>
-                      </div>
-                      
-                      <div class="w-100 d-flex justify-content-end align-items-center">
-                        <span class="danger-tag">Vencido</span>
-                      </div>
-                    </div>
-
-                    <div class="card-dashboard-item col-span-4">
-                      <div class="d-flex justify-content-between align-items-center">
-                        <h5 class="title-card-payments d-flex align-items-center">
-                          <i class="fa-solid fa-car"></i>
-                          <span class="ms-2">Jaqueline Silva</span>
-                        </h5>
-                        <div class="dropdown">
-                          <i class="dropdown-toggle
-                          fa-solid fa-ellipsis" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false"></i>
-                          <ul class="dropdown-menu" ariSa-labelledby="dropdownMenu2">
-                            <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modalPendente">Ver detalhes</button></li>
-                          </ul>
-                      </div>
-                      </div>
-                      <div class="mt-2 d-flex align-items-center justify-content-between flex-wrap">
-                      <div><span class="information">Placa:</span> <span class="value">NDX-2345</span></div>
-                      <div><span  class="information">Modelo:</span> <span class="value">Toyota Corolla</span></div>
-                      </div> 
-                      <div>
-                        <div class="mt-2"><span class="information">Hora da passagem:</span> <span class="value">30/03/2024 15:20 </span></div>
-                        <div class="mt-2"><span class="information">Hora do débito:</span> <span class="value">30/03/2024 15:22 </span></div>
-                      </div>
-                      
-                      <div class="w-100 d-flex justify-content-end align-items-center">
-                        <span class="warning-tag">Boleto pendente</span>
-                      </div>
-                    </div>
-
-                    <div class="card-dashboard-item col-span-4">
-                      <div class="d-flex justify-content-between align-items-center">
-                        <h5 class="title-card-payments d-flex align-items-center">
-                          <i class="fa-solid fa-car"></i>
-                          <span class="ms-2">Bárbara Nicolle M de Almeida</span>
-                        </h5>
-                      </div>
-                    <div class="mt-2 d-flex align-items-center justify-content-between flex-wrap">
-                    <div><span class="information">Placa:</span> <span class="value">BNS-1280</span></div>
-                    <div><span  class="information">Modelo:</span> <span class="value">Toyota Corolla</span></div>
-                    </div> 
-                    <div>
-                      <div class="mt-2"><span class="information">Hora da passagem:</span> <span class="value">30/03/2024 15:20 </span></div>
-                      <div class="mt-2"><span class="information">Hora do débito:</span> <span class="value">30/03/2024 15:22 </span></div>
-                    </div>
-                    
-                    <div class="w-100 d-flex justify-content-end align-items-center">
-                      <span class="info-tag">Em processamento</span>
-                    </div>
-                    </div>
-
-                    <div class="card-dashboard-item col-span-4">
-                      <div class="d-flex justify-content-between align-items-center">
-                        <h5 class="title-card-payments d-flex align-items-center">
-                          <i class="fa-solid fa-car"></i>
-                          <span class="ms-2">João Lucas Boaventura</span>
-                        </h5>
-                      </div>
-                      <div class="mt-2 d-flex align-items-center justify-content-between flex-wrap">
-                      <div><span class="information">Placa:</span> <span class="value">NMZ-7040</span></div>
-                      <div><span  class="information">Modelo:</span> <span class="value">Toyota Corolla</span></div>
-                      </div> 
-                      <div>
-                        <div class="mt-2"><span class="information">Hora da passagem:</span> <span class="value">30/03/2024 15:20 </span></div>
-                        <div class="mt-2"><span class="information">Hora do débito:</span> <span class="value">30/03/2024 15:22 </span></div>
-                      </div>
-                      
-                      <div class="w-100 d-flex justify-content-end align-items-center">
-                        <span class="info-tag">Em processamento</span>
-                      </div>
-                      </div>
-
-                      <div class="card-dashboard-item col-span-4">
-                        <div class="d-flex justify-content-between align-items-center">
-                          <h5 class="title-card-payments d-flex align-items-center">
-                            <i class="fa-solid fa-car"></i>
-                            <span class="ms-2">Gabriel Jesus</span>
-                          </h5>
-                        </div>
-                        <div class="mt-2 d-flex align-items-center justify-content-between flex-wrap">
-                        <div><span class="information">Placa:</span> <span class="value">NMX-7040</span></div>
-                        <div><span  class="information">Modelo:</span> <span class="value">Ford Ka</span></div>
-                        </div> 
-                        <div>
-                          <div class="mt-2"><span class="information">Hora da passagem:</span> <span class="value">30/03/2024 15:20 </span></div>
-                          <div class="mt-2"><span class="information">Hora do débito:</span> <span class="value">30/03/2024 15:22 </span></div>
-                        </div>
-                        
-                        <div class="w-100 d-flex justify-content-end align-items-center">
-                          <span class="info-tag">Em processamento</span>
-                        </div>
-                        </div>
-                     
                    </div>
                 </div>
             </div>
@@ -956,6 +814,7 @@
     <script src="./scripts/control-cards-cam.js"></script>
     <script src="./scripts/infravermelho-cam.js"></script>
     <script src="./scripts/maps.js"></script>
+    <script src="./scripts/list-payments.js"></script>
 </body>
 
 </html>

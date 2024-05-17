@@ -16,6 +16,12 @@ window.onload = () => {
             clearCallFormValues();
         });
 
+        document.getElementById('filterDriver').addEventListener('change', filterPayments);
+        document.getElementById('filterPlate').addEventListener('change', filterPayments);
+        document.getElementById('filterStatus').addEventListener('change', filterPayments);
+
+        displayPayments(listPayments);
+
         spinnerDashboard.classList.add('visually-hidden');
     
     }, 100);

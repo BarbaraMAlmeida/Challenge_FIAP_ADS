@@ -688,9 +688,19 @@ button a {
   max-height: 90vh;
 }
 
+@media (max-width: 1310px) {
+  .img-login img {
+    object-fit: contain;
+    max-height: 70vh;
+  }
+}
+
 @media (max-width: 1100.98px) {
   .col-span-6 {
     grid-column: span 12 / span 12;
+  }
+  .container-map {
+    height: 300px;
   }
   .wallpaper {
     display: none;
@@ -811,3 +821,33 @@ h5.card-title {
   margin: 0;
 }
 /* Espaçamento entre os retângulos */
+
+
+#perfil_selection.form-select {
+  border: 1px solid var(--bordergray);
+  border-radius: 8px;
+  color: var(--grayDefault);
+  background-color: transparent;
+}
+
+#perfil_selection .form-select:active {
+  border: 2px solid var(--bordergray);
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+#perfil_selection .form-select:focus {
+  border: 2px solid var(--bordergray);
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+#perfil_selection select:active {
+  box-shadow: none;
+}
+
+#perfil_selection.form-select:hover {
+  border: 2px solid var(--bordergray);
+  border-radius: 8px;
+  box-shadow: none;
+}
