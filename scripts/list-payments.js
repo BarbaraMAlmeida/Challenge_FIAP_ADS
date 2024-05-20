@@ -52,7 +52,6 @@ let listPayments = [
 let container = document.querySelector('.all-cards');
 
 function filterPayments() {
-    console.log("aaa")
     const filterDriver = document.getElementById('filterDriver').value;
     const filterPlate = document.getElementById('filterPlate').value;
     const filterStatus = document.getElementById('filterStatus').value;
