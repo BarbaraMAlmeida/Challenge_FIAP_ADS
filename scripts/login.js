@@ -1,15 +1,13 @@
 let permission;
-
 window.addEventListener('load', () => {
-    document.cookie = 'profile=';
-
+    localStorage.setItem('profile', '');
     document.getElementById('login').addEventListener('click', () => {
         formControlLogin();
     });
 })
 
 function formControlLogin() {
-    if(validForm()) {
+    if (validForm()) {
         permission = document.getElementById('perfil_selection').value;
         createPermission(permission);
     }
@@ -24,12 +22,12 @@ function validForm() {
     const email = document.getElementById('email').value.trim();
     const password = document.getElementById('password').value.trim();
 
-    if (!email || !password || !permissionSelect ) {
+    if (!email || !password || !permissionSelect) {
         return false;
     } else {
         return true;
     }
-    
+
 }
 
 function clearFormValues() {
@@ -38,23 +36,24 @@ function clearFormValues() {
 }
 
 function createPermission(permission) {
+    let profile = ""
     switch (permission) {
         case 'Administrador':
-        document.cookie = 'profile=ADMIN';
-        window.location.pathname = '/central.html';
-        break;
+            profile = "ADMIN"
+            break;
         case 'Central':
-        document.cookie = 'profile=CENTRAL'; 
-        window.location.pathname = '/central.html';
-        break;
+            profile = "CENTRAL"
+            break;
         case 'Suporte':
-        document.cookie = 'profile=SUPPORT'; 
-        window.location.pathname = '/central.html';
-        break;
+            profile = "SUPPORT"
+            break;
         default:
-        alert("Permissão não disponível")
-        break;
+            alert("Permissão não disponível")
+            return
     }
+
+    localStorage.setItem('profile', profile);
+    window.location.href = './central.html';
 
     clearFormValues();
 }

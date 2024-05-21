@@ -8,24 +8,8 @@ window.addEventListener('load', () => {
     })
 })
 
-function cookiesToObject() {
-    let cookies = document.cookie.split(';');
-    let cookieObj = {};
-
-    cookies.forEach(function(cookie) {
-        let parts = cookie.split('=');
-        let key = parts[0].trim();
-        let value = decodeURIComponent(parts[1]);
-
-        cookieObj[key] = value;
-    });
-
-    return cookieObj;
-}
-
 function getPermissionProfile() {
-    let cookies = cookiesToObject();
-    return cookies.profile;
+    return localStorage.getItem('profile');
 }
 
 function controlPermission() {
@@ -36,39 +20,36 @@ function controlPermission() {
     let adminBtnCall = document.getElementById('admin_btn_call');
     let camPrincipal = document.getElementById('cam-principal');
 
-    if(getPermissionProfile() === 'SUPPORT') {
-        if(window.location.pathname !== '/central.html') {
-            window.location.pathname = '/central.html';
+    if (getPermissionProfile() === 'SUPPORT') {
+        if (!window.location.pathname.includes('central.html')) {
+            window.location.href = './central.html';
         }
-        else {
-            registerUserAdmin.style.display = 'none';
-            controlCamAdmin.style.display = 'none';
-            adminBtnCall.style.display = 'none';
-            selectAdmin.style.display = 'none';
-            camPrincipal.style.display = 'none';
-            for (var i = 0; i < dashboardAdminAndCentral.length; i++) {
-                dashboardAdminAndCentral[i].style.display = 'none';
-            }
+
+        registerUserAdmin.style.display = 'none';
+        controlCamAdmin.style.display = 'none';
+        adminBtnCall.style.display = 'none';
+        selectAdmin.style.display = 'none';
+        camPrincipal.style.display = 'none';
+        for (var i = 0; i < dashboardAdminAndCentral.length; i++) {
+            dashboardAdminAndCentral[i].style.display = 'none';
         }
+
     }
-    else if(getPermissionProfile() === 'CENTRAL') {
-        if(window.location.pathname === '/cadastro-usuario.html') {
-            window.location.pathname = '/central.html';
+    else if (getPermissionProfile() === 'CENTRAL') {
+        if (window.location.pathname.includes('cadastro-usuario.html')) {
+            window.location.href = './central.html';
         }
         registerUserAdmin.style.display = 'none';
         selectAdmin.style.display = 'none';
     }
-    else if(getPermissionProfile() === '') {
-        window.location.pathname = '/index.html';
-    }
-    else if(getPermissionProfile() !== 'CENTRAL' &&
-    getPermissionProfile() !== 'SUPPORT' && 
-    getPermissionProfile() !== 'ADMIN') {
-        window.location.pathname = '/index.html';
+    else if (getPermissionProfile() !== 'CENTRAL' &&
+        getPermissionProfile() !== 'SUPPORT' &&
+        getPermissionProfile() !== 'ADMIN') {
+        window.location.href = './index.html';
     }
 }
 
 function logout() {
-    document.cookie = 'profile=';
-    window.location.pathname = '/index.html';
+    localStorage.setItem('profile', '');
+    window.location.href = './index.html';
 }
